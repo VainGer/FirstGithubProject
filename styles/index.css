@@ -9,13 +9,16 @@ h2 {
     text-decoration: underline;
 }
 
-div{
-    text-align: center;
+div {
+    margin-left: 20%;
 }
+
 img {
     width: 80%;
 }
 
 p {
-    font-size: 16px;font-family: Arial, Helvetica, sans-serif;text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
