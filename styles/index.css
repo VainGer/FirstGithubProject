@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    color: rgb(85, 49, 8);
+    background-color: rgb(211, 175, 97);
+}
+
+h2 {
+    text-align: right;
+    text-decoration: underline;
+}
+
+div{
+    text-align: center;
+}
+img {
+    width: 80%;
+}
+
+p {
+    font-size: 16px;font-family: Arial, Helvetica, sans-serif;text-align: center;
+}
