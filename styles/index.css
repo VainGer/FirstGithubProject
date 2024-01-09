@@ -43,3 +43,4 @@ table>caption {
 tr:nth-child(even) {
     background-color: grey;
 }
+ ul {direction: rtl;}
