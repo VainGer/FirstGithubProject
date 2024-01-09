@@ -9,16 +9,37 @@ h2 {
     text-decoration: underline;
 }
 
-div {
-    margin-left: 20%;
-}
-
 img {
     width: 80%;
+    margin-inline: 10%;
 }
 
 p {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+table {
+    width: 100%
+}
+
+td {
+    text-align: center;
+}
+
+table,
+td,
+th {
+    /*border: size (px), type(solid, dotted, dashed, groove), color*/
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table>caption {
+    border: 1px dashed blue
+}
+
+tr:nth-child(even) {
+    background-color: grey;
 }
