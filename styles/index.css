@@ -58,3 +58,39 @@ th {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(60, 60, 148);
 }
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px; /* Adjusts the spacing between rows */
+}
+
+tr {
+    background-color: #f9f9f9; /* Row background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to each row */
+}
+caption {
+    background-color: #f9f9f9; /* Row background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to each row */
+}
+
+
+td {
+    background-color: white; /* Cell background color */
+    padding: 10px; /* Padding inside each cell */
+    border-radius: 8px; /* Rounded corners for cells */
+    border: 1px solid #ddd; /* Border for cells */
+    margin: 5px; /* Margin around cells */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for each cell */
+    transition: transform 0.3s ease; /* Smooth transformation on hover */
+}
+
+td:hover {
+    transform: scale(1.05); /* Slightly enlarges the cell on hover */
+    background-color: #f0f0f0; /* Changes background color on hover */
+}
+
+/* Optional: Styling for the first row (headers) */
+tr:first-child td {
+    background-color: #6e48aa; /* Different background for header cells */
+    color: white; /* Text color for header cells */
+    font-weight: bold; /* Makes header text bold */
+}
