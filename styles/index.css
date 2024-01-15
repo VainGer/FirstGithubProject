@@ -1,7 +1,15 @@
 h1 {
     text-align: center;
     color: rgb(85, 49, 8);
-    background-color: rgb(211, 175, 97);
+    background-color: #cab062;
+}
+
+#h1Top {}
+
+#bottom {
+    position: fixed;
+    text-align: left;
+    top: 90%;
 }
 
 h2 {
@@ -9,6 +17,12 @@ h2 {
     text-decoration: underline;
 }
 
+.dataLinks {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    column-gap: 1%;
+    row-gap: 10%;
+}
 
 p {
     font-size: 16px;
@@ -109,8 +123,60 @@ tr:first-child td {
     font-weight: bold;
     /* Makes header text bold */
 }
-div{
+
+.left-image-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 40% 60%;
+
+    img {
+        width: 100%;
+    }
 }
+
+.right-image-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.small-images {
+    display: grid;
+    grid-template-columns: 80%;
+    padding-left: 20%;
+}
+
+.second-image {
+    padding-top: 10%;
+}
+
+#one {}
+
+#two {}
+
+#three {}
+
+#four {}
+
+#five {}
+
+#six {}
+
+#seven {}
+
+#eight {}
+
+#objects {}
+
+#houses {
+    img{
+        width: 50%;
+        padding-left: 60%;
+    }
+}
+
+#table1 {}
+
+#places {}
