@@ -1,34 +1,36 @@
-.dropdown-header {
+.drop-header {
     position: relative;
     display: inline-block;
 }
-.drop-button{
-    background-color: rgb(136, 88, 155);
+
+.drop-button {
+    background-color: rgb(144, 115, 172);
     border: none;
 }
-.drop-button:hover{
-    text-decoration:underline;
+
+.drop-button:hover {
+    text-decoration: underline;
 }
-.dropdown-links {
+
+.drop-links {
     display: none;
-    position: absolute;
-    background-color: grey;
+    background-color: rgb(84, 84, 129);
     width: max-content;
-    
+    position: absolute;
+    z-index: 1;
 }
 
-.dropdown-links a {
+.drop-links a {
+    display: block;
     text-decoration: none;
-    display: block;
-    color: gold;
-    transition: transform .2s;
+    color: whitesmoke;
 }
 
-.dropdown-header:hover .dropdown-links {
+.drop-header:hover .drop-links {
     display: block;
-    background-color: rgb(95, 54, 122);
+
 }
-.dropdown-links :hover{
-    background-color: black;
-    transform: scale(1.1);
+
+.drop-links a:hover {
+    text-decoration: underline;
 }
