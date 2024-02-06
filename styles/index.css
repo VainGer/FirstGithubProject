@@ -197,3 +197,47 @@ tr:first-child td {
 #table1 {}
 
 #places {}
+#hero {
+    width: 850px;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hero .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .site-header {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Splits logo and navigation on each side */
+    align-items: center; /* Centers them vertically */
+    padding: 10px 20px; /* Add some padding around the header content */
+  }
+  
+  .site-header .logo a {
+    text-decoration: none; /* Optional: Removes underline from logo */
+    color: #000; /* Change as needed */
+    /* Additional logo styles */
+  }
+  
+  .site-header .navigation ul {
+    list-style: none; /* Removes bullet points from list */
+    display: flex; /* Layout list items in a row */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .site-header .navigation ul li {
+    margin-left: 20px; /* Adds space between menu items */
+  }
+  
+  .site-header .navigation ul li a {
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: #000; /* Change as needed */
+    /* Additional link styles */
+  }
+  
