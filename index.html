@@ -4,69 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="Harry Potter, the boy who lived, avada kedabra, Ron, Hermione, Voldemort, Dumbledore">
     <title>Harry Potter</title>
-    <link rel="icon" href="./images/png-transparent-harry-potter-icon-thumbnail.png">
+    <link rel="icon" href="./assets/icons/logo.svg">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/header.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="./index.html" id="home"><img src="./icons/home.svg" alt=""></a>
-        <div class="drop-header">
-            <button class="button" onclick="window.location.href='movies.html'">
-                Movies
-            </button>
-            <div class="drop-links">
-                <a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a>
-                <a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of Secrets</a>
-                <a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban</a>
-                <a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet of Fire</a>
-                <a href="./oreder_of_the_phoenix_movie.html">Harry Potter and the Order of the Phoenix</a>
-                <a href="./half-blood_prince_movie.html">Harry Potter and the Half-Blood Prince</a>
-                <a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows: Part 1</a>
-                <a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows: Part 2</a>
-            </div>
-        </div>
-        <div class="drop-header">
-            <button class="button">
-                Books
-            </button>
-            <div class="drop-links">
-                    <a href="./philosophers_stone_book.html">Harry Potter and the Philosopher's Stone</a>
-                    <a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of Secrets</a>
-                    <a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban</a>
-                    <a href="./goblet_of_fire_book.html">Harry Potter and the Goblet of Fire</a>
-                    <a href="./oreder_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix</a>
-                    <a href="./half-blood_prince_book.html">Harry Potter and the Half-Blood Prince</a>
-                    <a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows</a>
-            </div>
-        </div>
-        <div class="drop-header">
-            <button class="button">
-                Hogwarts Houses
-            </button>
-            <div class="drop-links">
-                <a href="">Gryffindor</a>
-                <a href="">Hufflepuff</a>
-                <a href="">Ravenclaw</a>
-                <a href="">Slytherin</a>
-            </div>
-        </div>
-        <button class="button" onclick="window.location.href='./gallery.html'">Gallery</button>
-        <button class="button" onclick="window.location.href='./register.html'">Register</button>
-    </header>
-
-
-    <section id="hero">
-        <video autoplay preload="auto" muted loop>
-            <source src="./images/video.mp4" type="video/mp4">
-        </video>
+    <section id="header">
+        <header>
+            <nav>
+                <ul class="grid" id="mobile-header">
+                    <li>
+                        <div id="mobile-nav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <ul class="overlay-content">
+                                <li>
+                                    <form action="search">
+                                        <input type="text" placeholder="Search" id="search">
+                                    </form>
+                                </li>
+                                <li id="movies-menu" class="secondary-overlay">
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeMovies()">&times;</a>
+                                        <ul class="overlay-content">
+                                            <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
+                                            <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
+                                            <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
+                                            <li><a href="">Harry Potter and the Goblet of Fire</a></li>
+                                            <li><a href="">Harry Potter and the Order of the Phoenix</a></li>
+                                            <li><a href="">Harry Potter and the Half-Blood Prince</a></li>
+                                            <li><a href="">Harry Potter and the Deathly Hallows: Part 1</a></li>
+                                            <li><a href="">Harry Potter and the Deathly Hallows: Part 2</a></li>
+                                        </ul>
+                                </li>
+                                <li onclick="openMovies()"><button>Movies</button></li>
+                                <li id="books-menu" class="secondary-overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeBooks()">&times;</a>
+                                    <ul class="overlay-content">
+                                        <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
+                                        <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
+                                        <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
+                                        <li><a href="">Harry Potter and the Goblet of Fire</a></li>
+                                        <li><a href="">Harry Potter and the Order of the Phoenix</a></li>
+                                        <li><a href="">Harry Potter and the Half-Blood Prince</a></li>
+                                        <li><a href="">Harry Potter and the Deathly Hallows</a></li>
+                                    </ul>
+                                </li>
+                                <li onclick="openBooks()"><button>Books</button></li>
+                                <li id="house-menu" class="secondary-overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeHouse()">&times;</a>
+                                    <ul class="overlay-content">
+                                        <li><a href="">Gryffindor</a></li>
+                                        <li><a href="">Hufflepuff</a></li>
+                                        <li><a href="">Ravenclaw</a></li>
+                                        <li><a href="">Slytherin</a></li>
+                                    </ul>
+                                </li>
+                                <button onclick="openHouse()">Houses</button>
+                                <li><button>Characters</button></li>
+                                <li><button>Gallery</button></li>
+                            </ul>
+                        </div>
+                        <button onclick="openNav()"><img src="./assets/icons/burger.png" alt=""></button>
+                    </li>
+                    <li><button><img src="./assets/icons/logo.svg" alt="logo"></button></li>
+                    <li>
+                        <button onclick="openLogin()">Login</button>
+                </ul>
+            </nav>
+        </header>
     </section>
-
+    <section id="hero">
+        <section id="space"></section>
+        <section id="main">
+            <h1>Luna Scanamander, Lovegod</h1>
+            <article>"The girl gave off an aura of distinct dottiness. Perhaps it was the fact that she had stuck her
+                wand
+                behind her left ear for safekeeping, or that she had chosen to wear a necklace of Butterbeer caps, or
+                that
+                she was reading a magazine upside down."</article>
+            <button id="callToAction">Read more</button>
+        </section>
+    </section>
+    <section id="characters-section">
+        <h2>Characters</h2>
+        <ul id="characters" class="grid">
+            <li><a href=""><img src="./assets/images/characters/Harry_Potter.webp" alt=""></a>
+                <a href=""><br>Harry Potter</a>
+            </li>
+            <li><a href=""><img src="./assets/images/characters/Hermione_Granger.webp" alt=""></a>
+                <a href=""><br>Hermione Granger</a>
+            </li>
+            <li><a href=""><img src="./assets/images/characters/Ronald_Weasley.webp" alt=""></a>
+                <a href=""><br>Ron Weasley</a>
+            </li>
+            <li><a href=""><img src="./assets/images/characters/Ginny_Weasley.webp" alt=""></a>
+                <a href=""><br>Ginny Weasley</a>
+            </li>
+            <li><a href=""><img src="./assets/images/characters/Neville_Longbottom.webp" alt=""></a>
+                <a href=""><br>Neville Longbottom</a>
+            </li>
+            <li><a href=""><img src="./assets/images/characters/Luna_Lovegood.webp" alt=""></a>
+                <a href=""><br>Luna Lovegood</a>
+            </li>
+            <li><a href=""><img src="./assets/images/characters/Severus_Snape.webp" alt=""></a>
+                <a href=""><br>Severus Snape</a>
+            </li>
+            <li><a href=""><img src="./assets/images/characters/Lord_Voldemort.webp" alt=""></a>
+                <a href=""><br>Lord Voldemort</a>
+            </li>
+        </ul>
+    </section>
+    <section class="secondary">
+        <h2>Movies</h2>
+        <ul id="movies" class="grid">
+            <li><a href=""><img src="./assets/images/movies/hp1.jpg" alt=""></a><a href=""><br>Harry Potter and the
+                    Philosopher's Stone</a></li>
+            <li><a href=""><img src="./assets/images/movies/hp2.jpg" alt=""></a><a href=""><br>Harry Potter and the
+                    Chamber of Secrets</a></li>
+            <li><a href=""><img src="./assets/images/movies/hp3.jpg" alt=""></a><a href=""><br>Harry Potter and the
+                    Prisoner of Azkaban</a></li>
+            <li><a href=""><img src="./assets/images/movies/hp4.jpg" alt=""></a><a href=""><br>Harry Potter and the
+                    Goblet of Fire</a></li>
+            <li><a href=""><img src="./assets/images/movies/hp5.jpg" alt=""></a><a href=""><br>Harry Potter and the
+                    Order of the Phoenix</a></li>
+            <li><a href=""><img src="./assets/images/movies/hp6.jpg" alt=""></a><a href=""><br>Harry Potter and the
+                    Half-Blood Prince</a></li>
+            <li><a href=""><img src="./assets/images/movies/hp7.jpg" alt=""></a><a href=""><br>Harry Potter and the
+                    Deathly Hallows: Part 1</a></li>
+            <li><a href=""><img src="./assets/images/movies/hp8.jpg" alt=""></a><a href=""><br>Harry Potter and the
+                    Deathly Hallows: Part 2</a></li>
+        </ul>
+    </section>
+    <section class="secondary">
+        <h2>Books</h2>
+        <ul id="books" class="grid">
+            <li><a href=""><img src="./assets/images/books/hp1.webp" alt=""></a><a href=""><br>Harry Potter and the
+                    Philosopher's Stone</a></li>
+            <li><a href=""><img src="./assets/images/books/hp2.webp" alt=""></a><a href=""><br>Harry Potter and the
+                    Chamber of Secrets</a></li>
+            <li><a href=""><img src="./assets/images/books/hp3.webp" alt=""></a><a href=""><br>Harry Potter and the
+                    Prisoner of Azkaban</a></li>
+            <li><a href=""><img src="./assets/images/books/hp4.webp" alt=""></a><a href=""><br>Harry Potter and the
+                    Goblet of Fire</a></li>
+            <li><a href=""><img src="./assets/images/books/hp5.webp" alt=""></a><a href=""><br>Harry Potter and the
+                    Order of the Phoenix</a></li>
+            <li><a href=""><img src="./assets/images/books/hp6.webp" alt=""></a><a href=""><br>Harry Potter and the
+                    Half-Blood Prince</a></li>
+            <li id="last-book"><a href=""><img src="./assets/images/books/hp7.webp" alt=""></a><a href=""><br>Harry
+                    Potter and the Deathly Hallows</a></li>
+        </ul>
+    </section>
+    <section class="secondary">
+        <h2>Hogwarts Houeses</h2>
+        <ul id="houses" class="grid">
+            <li><a href=""><img src="./assets/images/houses/gryffindor.png" alt=""></a><a href=""><br>Gryffindor</a>
+            </li>
+            <li><a href=""><img src="./assets/images/houses/hufflepuff.png" alt=""></a><a href=""><br>Hufflepuff</a>
+            </li>
+            <li><a href=""><img src="./assets/images/houses/ravenclaw.png" alt=""></a><a href=""><br>Ravenclaw</a></li>
+            <li><a href=""><img src="./assets/images/houses/slytherin.png" alt=""></a><a href=""><br>Slytherin</a></li>
+        </ul>
+    </section>
+    <footer class="grid">
+        <a href="#"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./assets/icons/instagram.svg" alt="instagram"></a>
+        <a href="#"><img src="./assets/icons/twitter.png" alt="X"></a>
+        <a href="#"><img src="./assets/icons/tik-tok.svg" alt="tik-tok"></a>
+    </footer>
 </body>
-
 
 </html>

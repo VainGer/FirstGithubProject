@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry Potter and the Half-Blood Prince
-    </title>
-    <link rel="stylesheet" href="./styles/header.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/mobile.css">
 </head>
-
 <body>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident enim porro vel maiores, sed explicabo quas
-        eveniet eos eligendi delectus quod, sequi dicta! Illum quod libero sint, molestias excepturi vel!</p>
+    <section id="header">
+        <header>
+            <nav>
+                <ul id="mobile-nav" class="grid">
+                    <li>
+                        <div class="grid, dropDown">
+                            <button onclick="openBurger()" class="dropBtn"><img src="./assets/icons/burger.png"
+                                    alt=""></button>
+                            <ul class="menu-content" id="main-menu-content">
+                                <li>
+                                    <form action="search">
+                                        <input type="search" placeholder="Search">
+                                    </form>
+                                </li>
+                                <li>
+                                    <button onclick="openMovies()">Movies</button>
+                                    <ul id="movies-content" class="menu-content">
+                                        <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
+                                        <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
+                                        <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
+                                        <li><a href="">Harry Potter and the Goblet of Fire</a></li>
+                                        <li><a href="">Harry Potter and the Order of the Phoenix</a></li>
+                                        <li><a href="">Harry Potter and the Half-Blood Prince</a></li>
+                                        <li><a href="">Harry Potter and the Deathly Hallows: Part 1</a></li>
+                                        <li><a href="">Harry Potter and the Deathly Hallows: Part 2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button onclick="openBooks()">Books</button>
+                                    <ul id="books-content" class="menu-content">
+                                        <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
+                                        <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
+                                        <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
+                                        <li><a href="">Harry Potter and the Goblet of Fire</a></li>
+                                        <li><a href="">Harry Potter and the Order of the Phoenix</a></li>
+                                        <li><a href="">Harry Potter and the Half-Blood Prince</a></li>
+                                        <li><a href="">Harry Potter and the Deathly Hallows</a></li>
+                                    </ul>
+                                </li>
+                                <li><button onclick="openHouses()">Houses</button>
+                                    <ul id="houses-content" class="menu-content">
+                                        <li><a href="">Gryffindor</a></li>
+                                        <li><a href="">Hufflepuff</a></li>
+                                        <li><a href="">Ravenclaw</a></li>
+                                        <li><a href="">Slytherin</a></li>
+                                    </ul>
+                                </li>
+                                <li><button>Gallery</button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><button onclick="window.location.href='./index.html'""><img src="./assets/icons/logo.svg" alt="Logo"></button></li>
+                    <li>
+                        <ul class="grid" id="sign">
+                            <li><button>Log In</button></li>
+                            <li><button>Sign Up</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
 </body>
-
 </html>

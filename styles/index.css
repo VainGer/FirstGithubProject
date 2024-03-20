@@ -1,14 +1,63 @@
+@import url(./vars.css);
+@import url(./reset.css);
+@import url(./mobile.css);
+@import url(./desktop.css);
+
+.grid {
+  display: grid;
+}
+
 #hero {
-    width: 850px;
-    height: 350px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 90vh;
+  background-image: url(../assets/images/hero.avif);
+  background-repeat: no-repeat;
+}
+
+#space {
+  height: 60vh;
+}
+
+#main {
+  text-align: center;
+  background-color: rgba(73, 93, 110, 0.356);
+}
+
+.secondary {
+  text-align: center;
+}
+
+@media (max-width:900px) {
+  #hero {
+    height: 90vh;
+    background-size: cover;
+    background-position: 50% 5%;
   }
-  #hero .video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  #characters {
+    grid-template-columns: 1fr 1fr;
     text-align: center;
   }
+
+  #characters,
+  img {
+    scale: 90%;
+  }
+
+  #characters-section {
+    text-align: center;
+  }
+
+  #movies {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #books {
+    grid-template-columns: 1fr 1fr;
+  }
+  #houses {
+    grid-template-columns: 1fr 1fr;
+  }
+  #last-book{
+    grid-column: 1/3;
+  }
+}
