@@ -14,30 +14,33 @@
     <section id="header">
         <header>
             <nav>
-                <ul class="grid" id="mobile-header">
-                    <li>
+                <ul class="grid" id="header">
+                    <li id="main-categories">
                         <div id="mobile-nav" class="overlay">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <ul class="overlay-content">
+                            <ul class="overlay-content, grid" id="categories">
                                 <li>
                                     <form action="search">
-                                        <input type="text" placeholder="Search" id="search">
+                                        <input type="text" placeholder="Search" id="mobile-search">
                                     </form>
                                 </li>
+                                <li><button>Movies</button></li>
+                                <li class="mobile-buttons" onclick="openMovies()"><button>Movies</button></li>
                                 <li id="movies-menu" class="secondary-overlay">
-                                        <a href="javascript:void(0)" class="closebtn" onclick="closeMovies()">&times;</a>
-                                        <ul class="overlay-content">
-                                            <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
-                                            <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
-                                            <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
-                                            <li><a href="">Harry Potter and the Goblet of Fire</a></li>
-                                            <li><a href="">Harry Potter and the Order of the Phoenix</a></li>
-                                            <li><a href="">Harry Potter and the Half-Blood Prince</a></li>
-                                            <li><a href="">Harry Potter and the Deathly Hallows: Part 1</a></li>
-                                            <li><a href="">Harry Potter and the Deathly Hallows: Part 2</a></li>
-                                        </ul>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeMovies()">&times;</a>
+                                    <ul class="overlay-content">
+                                        <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
+                                        <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
+                                        <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
+                                        <li><a href="">Harry Potter and the Goblet of Fire</a></li>
+                                        <li><a href="">Harry Potter and the Order of the Phoenix</a></li>
+                                        <li><a href="">Harry Potter and the Half-Blood Prince</a></li>
+                                        <li><a href="">Harry Potter and the Deathly Hallows: Part 1</a></li>
+                                        <li><a href="">Harry Potter and the Deathly Hallows: Part 2</a></li>
+                                    </ul>
                                 </li>
-                                <li onclick="openMovies()"><button>Movies</button></li>
+                                <li><button>Books</button></li>
+                                <li class="mobile-buttons" onclick="openBooks()"><button>Books</button></li>
                                 <li id="books-menu" class="secondary-overlay">
                                     <a href="javascript:void(0)" class="closebtn" onclick="closeBooks()">&times;</a>
                                     <ul class="overlay-content">
@@ -50,7 +53,8 @@
                                         <li><a href="">Harry Potter and the Deathly Hallows</a></li>
                                     </ul>
                                 </li>
-                                <li onclick="openBooks()"><button>Books</button></li>
+                                <li><button>Houses</button></li>
+                                <li class="mobile-buttons"><button onclick="openHouse()">Houses</button></li>
                                 <li id="house-menu" class="secondary-overlay">
                                     <a href="javascript:void(0)" class="closebtn" onclick="closeHouse()">&times;</a>
                                     <ul class="overlay-content">
@@ -60,22 +64,22 @@
                                         <li><a href="">Slytherin</a></li>
                                     </ul>
                                 </li>
-                                <button onclick="openHouse()">Houses</button>
                                 <li><button>Characters</button></li>
                                 <li><button>Gallery</button></li>
                             </ul>
                         </div>
-                        <button onclick="openNav()"><img src="./assets/icons/burger.png" alt=""></button>
+                        <img id="burger-menu" onclick="openNav()" src="./assets/icons/burger.png" alt="">
                     </li>
-                    <li><button><img src="./assets/icons/logo.svg" alt="logo"></button></li>
-                    <li>
-                        <button onclick="openLogin()">Login</button>
+                    <li><a href=""><img id="logo" src="./assets/icons/logo.svg" alt=""></a>
+                    </li>
+                    <li id="login">
+                        <button onclick="openLogin()">SIGN UP</button>
                 </ul>
             </nav>
         </header>
     </section>
     <section id="hero">
-        <section id="space"></section>
+        <div id="space"></div>
         <section id="main">
             <h1>Luna Scanamander, Lovegod</h1>
             <article>"The girl gave off an aura of distinct dottiness. Perhaps it was the fact that she had stuck her

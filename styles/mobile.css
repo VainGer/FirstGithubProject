@@ -1,55 +1,69 @@
-body{
+body {
     color: white;
-    background-color: blueviolet;
+    background-color: var(--main-bg);
 }
+
 footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-button{
+
+button {
     border: none;
     background-color: transparent;
     color: white;
 }
 
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-.secondary-overlay{
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-.overlay-content {
-    position: relative;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+@media (max-width :999px) {
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(247, 0, 0);
+        background-color: rgb(236, 5, 5);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .secondary-overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
 }
 
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-#mobile-header{
+#header {
     grid-template-columns: 1fr 1fr 1fr;
+    height: 10vh;
+    text-align: center;
+}
+
+#header img,
+button,
+a {
+    height: 10vh;
 }
