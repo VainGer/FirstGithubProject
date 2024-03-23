@@ -1,3 +1,8 @@
+.grid {
+    display: grid;
+    text-align: center;
+}
+
 body {
     color: white;
     background-color: var(--main-bg);
@@ -13,6 +18,27 @@ button {
     color: white;
 }
 
+header {
+    grid-template-columns: 1fr 2fr 1fr;
+    position: sticky;
+    height: 12vh;
+    top: 0%;
+    z-index: 1;
+    background-color: var(--header-bg);
+}
+
+#burger-menu {
+    width: 80px;
+}
+
+#logo {
+    background-image: url(../assets/icons/logo.svg);
+    background-repeat: no-repeat;
+    background-size: calc(80vw / 25%);
+    background-position-y: center;
+    background-position-x: center;
+}
+
 @media (max-width :999px) {
     .overlay {
         height: 100%;
@@ -21,49 +47,47 @@ button {
         z-index: 1;
         left: 0;
         top: 0;
-        background-color: rgb(247, 0, 0);
-        background-color: rgb(236, 5, 5);
+        background-color: var(--overlay-bg);
         overflow-x: hidden;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .secondary-overlay {
-        height: 0%;
-        width: 100%;
+        height: 100%;
+        width: 0%;
         position: fixed;
         z-index: 2;
         left: 0;
         top: 0;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: var(--overlay-bg);
         overflow-x: hidden;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .overlay-content {
         position: relative;
-        top: 20%;
+        top: 0%;
         width: 100%;
         text-align: center;
-        margin-top: 30px;
+    }
+
+    .secondary-overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        background-color: var(--overlay-bg);
     }
 
     .overlay .closebtn {
         position: absolute;
-        top: 20px;
-        right: 45px;
+        top: 10px;
+        right: 25px;
         font-size: 60px;
+        z-index: 1;
     }
-}
 
-#header {
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 10vh;
-    text-align: center;
-}
-
-#header img,
-button,
-a {
-    height: 10vh;
+    .overlay li {
+        padding-bottom: 15px;
+    }
 }

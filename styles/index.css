@@ -3,12 +3,10 @@
 @import url(./mobile.css);
 @import url(./desktop.css);
 
-.grid {
-  display: grid;
-}
+
 #hero {
   height: 90vh;
-  background-image: url(../assets/images/hero.avif);
+  background-image: url(../assets/images/hero.jpeg);
   background-repeat: no-repeat;
   background-position: center;
 }

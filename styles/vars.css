@@ -1,5 +1,6 @@
-:root{
- /*colors*/
- --main-bg:  rgba(19, 64, 105, 1);
- --header-bg:
+:root {
+    /*colors*/
+    --main-bg: rgba(19, 64, 105, 1);
+    --header-bg: rgb(19, 63, 105);
+    --overlay-bg: rgb(19, 63, 105);
 }
