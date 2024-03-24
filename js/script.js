@@ -23,3 +23,11 @@ function openHouse() {
 function closeHouse() {
   document.getElementById("house-menu").style.width = "0%";
 }
+function openLogin() {
+  document.getElementById("login-form").style.height = "100%";
+  document.getElementById("login-form").style.width = "100%";
+}
+function closeLogin() {
+  document.getElementById("login-form").style.height = "0%";
+  document.getElementById("login-form").style.width = "0%";
+}

@@ -1,6 +1,5 @@
 .grid {
     display: grid;
-    text-align: center;
 }
 
 body {
@@ -13,33 +12,71 @@ footer {
 }
 
 button {
-    border: none;
     background-color: transparent;
     color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(14, 47, 78);
+
 }
 
 header {
     grid-template-columns: 1fr 2fr 1fr;
     position: sticky;
-    height: 12vh;
-    top: 0%;
+    height: 85px;
     z-index: 1;
     background-color: var(--header-bg);
 }
 
 #burger-menu {
-    width: 80px;
+    width: 100px;
+    /* margin-top: 10px; */
 }
-
 #logo {
     background-image: url(../assets/icons/logo.svg);
     background-repeat: no-repeat;
-    background-size: calc(80vw / 25%);
-    background-position-y: center;
-    background-position-x: center;
+    background-size: 100%;
+    background-position: 0 -8px;
+    width: 105px;
+    height: 105px;
+    margin-left: calc(23% + 1vw);
+}
+
+#login-form {
+    position: fixed;
+    height: 0;
+    width: 0;
+    z-index: 1;
+    background-color: var(--main-bg);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: url(../assets/icons/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    text-align: center;
+}
+
+#back {
+    background-image: url(../assets/icons/back.svg);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2vh;
+    left: 5vw;
+}
+
+#sign-up-form {
+    padding-top: 20vh;
 }
 
 @media (max-width :999px) {
+
+
     .overlay {
         height: 100%;
         width: 0;
@@ -50,33 +87,22 @@ header {
         background-color: var(--overlay-bg);
         overflow-x: hidden;
         transition: 0.3s;
+        background-image: url(../assets/icons/logo.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 15%;
+        background-size: 400px;
     }
 
-    .secondary-overlay {
-        height: 100%;
-        width: 0%;
-        position: fixed;
-        z-index: 2;
-        left: 0;
-        top: 0;
-        background-color: var(--overlay-bg);
-        overflow-x: hidden;
-        transition: 0.3s;
+    #mobile-search {
+        background-color: rgba(255, 255, 255, 0.815);
     }
 
     .overlay-content {
         position: relative;
-        top: 0%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .secondary-overlay-content {
-        position: relative;
         top: 25%;
         width: 100%;
         text-align: center;
-        background-color: var(--overlay-bg);
+
     }
 
     .overlay .closebtn {

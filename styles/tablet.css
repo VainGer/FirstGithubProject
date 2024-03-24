@@ -1,0 +1,6 @@
+@media (min-width: 425px) {
+    #logo {
+        position: relative;
+        margin-left: calc(25% + 6vw);
+    }
+}
