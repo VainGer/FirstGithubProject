@@ -31,6 +31,7 @@ header {
     width: 100%;
     z-index: 1;
     position: fixed;
+    background-image: linear-gradient(var(--main-bg), rgba(255, 255, 255, 0));
 }
 
 #burger-menu {
@@ -44,17 +45,16 @@ header {
     background-position: 0 -8px;
     width: 105px;
     height: 105px;
-    margin-left: calc(23% + 1vw);
+    margin-left: 23%;
 }
 
 #login-form {
+    display: none;
     position: fixed;
-    height: 0;
-    width: 0;
+    height: 100%;
+    width: 100%;
     z-index: 1;
     background-color: var(--main-bg);
-    overflow-y: hidden;
-    overflow-x: hidden;
     background-image: url(../assets/icons/logo.svg);
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -83,7 +83,6 @@ header {
 
 @media (max-width :999px) {
 
-
     .overlay {
         height: 100%;
         width: 0;
@@ -94,6 +93,20 @@ header {
         background-color: var(--overlay-bg);
         overflow-x: hidden;
         transition: 0.3s;
+        background-image: url(../assets/icons/logo.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 15%;
+        background-size: 400px;
+    }
+    .secondary-overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: var(--overlay-bg);
+        overflow-x: hidden;
         background-image: url(../assets/icons/logo.svg);
         background-repeat: no-repeat;
         background-position: 50% 15%;
@@ -114,7 +127,12 @@ header {
         font-size: 60px;
         z-index: 1;
     }
-
+    
+    #dobby{
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
     .overlay li {
         padding-bottom: 15px;
     }

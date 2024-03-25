@@ -17,14 +17,14 @@
         <nav class="overlay" id="nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="overlay-content">
-                <li>Dobby has brought you the menu, master</li>
+                <li id="dobby">Dobby has brought you the menu, master</li>
                 <li>
                     <form action="search">
                         <input type="text" placeholder="Search" id="mobile-search">
                     </form>
                 </li>
                 <li onclick="openMovies()">Movies</li>
-                <li class="overlay" id="movies-menu">
+                <li class="secondary-overlay" id="movies-menu">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeMovies()">&times;</a>
                     <ul class="overlay-content">
                         <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a></li>
@@ -38,7 +38,7 @@
                     </ul>
                 </li>
                 <li onclick="openBooks()">Books</li>
-                <li class="overlay" id="books-menu">
+                <li class="secondary-overlay" id="books-menu">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeBooks()">&times;</a>
                     <ul class="overlay-content">
                         <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
@@ -51,7 +51,7 @@
                     </ul>
                 </li>
                 <li onclick="openHouse()">Houese</li>
-                <li class="overlay" id="house-menu">
+                <li class="secondary-overlay" id="house-menu">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeHouse()">&times;</a>
                     <ul class="overlay-content">
                         <li><a href="#">Gryffindor</a></li>
@@ -81,12 +81,12 @@
                 <label for="">PASSWORD <br></label>
                 <input type="password" name="password" id=""><br>
                 <label for="">CHOOSE YOUR HOUSE <br></label>
-                <select name="House" id="">
+                <select name="House" id="house-select">
                     <option value="Gryffindor">Gryffindor</option>
                     <option value="Slytherin">Slytherin</option>
                     <option value="Ravenclaw">Ravenclaw</option>
                     <option value="Hufflepuff">Hufflepuff</option>
-                </select><br><br>
+                </select>
                 <input type="submit" value="SIGN UP">
             </form>
         </div>
