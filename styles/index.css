@@ -34,25 +34,6 @@
     text-align: center;
   }
 
-  #characters,
-  img {
-    scale: 90%;
-  }
-
-  #characters-section {
-    text-align: center;
-  }
-
-  #movies {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #books {
-    grid-template-columns: 1fr 1fr;
-  }
   #houses {
     grid-template-columns: 1fr 1fr;
   }
-  #last-book{
-    grid-column: 1/3;
-}

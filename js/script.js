@@ -23,9 +23,15 @@ function openHouse() {
 function closeHouse() {
   document.getElementById("house-menu").style.width = "0%";
 }
+function openSignup() {
+  document.getElementById("sign-up").style.display="block";
+}
+function closeSignup() {
+  document.getElementById("sign-up").style.display="none";
+}
 function openLogin() {
-  document.getElementById("login-form").style.display="block";
+  document.getElementById("have-acc").style.display="block";
 }
 function closeLogin() {
-  document.getElementById("login-form").style.display="none";
+  document.getElementById("have-acc").style.display="none";
 }
