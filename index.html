@@ -11,12 +11,13 @@
 </head>
 
 <body>
+    <div id="header-container">
     <header class="grid">
         <img onclick="openNav()" id="burger-menu" src="./assets/icons/burger.png" alt="">
         <nav class="overlay" id="nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="overlay-content">
-                <!-- <li id="menu-logo"><img src="./assets/icons/logo.svg" alt=""></li> -->
+                <li>Dobby has brought you the menu, master</li>
                 <li>
                     <form action="search">
                         <input type="text" placeholder="Search" id="mobile-search">
@@ -26,7 +27,7 @@
                 <li class="overlay" id="movies-menu">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeMovies()">&times;</a>
                     <ul class="overlay-content">
-                        <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
+                        <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a></li>
                         <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
                         <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
                         <li><a href="">Harry Potter and the Goblet of Fire</a></li>
@@ -63,6 +64,7 @@
                 <li><a href="">Gallery</a></li>
             </ul>
         </nav>
+ 
         <a href="./index.html" id="logo"></a>
         <button onclick="openLogin()" class="open-login">SIGN UP</button>
         <div id="login-form">
@@ -89,10 +91,11 @@
             </form>
         </div>
     </header>
+</div>
     <section id="hero">
         <div id="space"></div>
         <section id="main">
-            <h1>Luna Scanamander, Lovegod</h1>
+            <h1>Luna Lovegod</h1>
             <article>"The girl gave off an aura of distinct dottiness. Perhaps it was the fact that she had stuck her
                 wand
                 behind her left ear for safekeeping, or that she had chosen to wear a necklace of Butterbeer caps, or
@@ -138,7 +141,7 @@
                     Chamber of Secrets</a></li>
             <li><a href=""><img src="./assets/images/movies/hp3.jpg" alt=""></a><a href=""><br>Harry Potter and the
                     Prisoner of Azkaban</a></li>
-            <li><a href=""><img src="./assets/images/movies/hp4.jpg" alt=""></a><a href=""><br>Harry Potter and the
+            <li><a href=""><img src="./assets/images/movies/hp4.jpg" alt=""><br>Harry Potter and the
                     Goblet of Fire</a></li>
             <li><a href=""><img src="./assets/images/movies/hp5.jpg" alt=""></a><a href=""><br>Harry Potter and the
                     Order of the Phoenix</a></li>

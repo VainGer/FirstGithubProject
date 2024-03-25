@@ -21,19 +21,22 @@ button:hover {
     background-color: rgb(14, 47, 78);
 
 }
-
+#header-container{
+    height: 85px;
+}
 header {
     grid-template-columns: 1fr 2fr 1fr;
     position: sticky;
     height: 85px;
+    width: 100%;
     z-index: 1;
-    background-color: var(--header-bg);
+    position: fixed;
 }
 
 #burger-menu {
     width: 100px;
-    /* margin-top: 10px; */
 }
+
 #logo {
     background-image: url(../assets/icons/logo.svg);
     background-repeat: no-repeat;
@@ -70,6 +73,10 @@ header {
     left: 5vw;
 }
 
+#mobile-search {
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
 #sign-up-form {
     padding-top: 20vh;
 }
@@ -93,16 +100,11 @@ header {
         background-size: 400px;
     }
 
-    #mobile-search {
-        background-color: rgba(255, 255, 255, 0.815);
-    }
-
     .overlay-content {
         position: relative;
         top: 25%;
         width: 100%;
         text-align: center;
-
     }
 
     .overlay .closebtn {
