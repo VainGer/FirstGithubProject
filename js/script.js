@@ -35,3 +35,36 @@ function openLogin() {
 function closeLogin() {
   document.getElementById("have-acc").style.display="none";
 }
+//for home page menu
+function openChar(){
+  if(document.getElementById("characters").style.display==="none"){
+    document.getElementById("characters").style.display="grid";
+  }
+  else{
+    document.getElementById("characters").style.display="none";
+  }
+}
+function openMov(){
+  if(document.getElementById("movies").style.display==="none"){
+    document.getElementById("movies").style.display="grid";
+  }
+  else{
+    document.getElementById("movies").style.display="none";
+  }
+}
+function openBook(){
+  if(document.getElementById("books").style.display==="none"){
+    document.getElementById("books").style.display="grid";
+  }
+  else{
+    document.getElementById("books").style.display="none";
+  }
+}
+function openHouses(){
+  if(document.getElementById("houses").style.display==="none"){
+    document.getElementById("houses").style.display="grid";
+  }
+  else{
+    document.getElementById("houses").style.display="none";
+  }
+}

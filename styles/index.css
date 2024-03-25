@@ -20,20 +20,50 @@
   background-color: rgba(73, 93, 110, 0.356);
 }
 
-.secondary {
-  text-align: center;
+
+#hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: 50% 5%;
 }
-  #hero {
-    height: 90vh;
-    background-size: cover;
-    background-position: 50% 5%;
-  }
 
-  #characters {
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-  }
+#houses {
+  grid-template-columns: 1fr 1fr;
+  display: none;
+}
 
-  #houses {
-    grid-template-columns: 1fr 1fr;
-  }
+#characters {
+  grid-template-columns: 1fr 1fr;
+  display: none;
+}
+
+#characters img {
+  scale: 90%;
+}
+
+#movies {
+  grid-template-columns: 1fr 1fr;
+  display: none;
+}
+
+#movies img {
+  scale: 90%;
+}
+
+#books {
+  grid-template-columns: 1fr 1fr;
+  display: none;
+}
+
+#books img {
+  scale: 90%;
+}
+
+#last-book {
+  grid-column: 1/3;
+}
+
+.secondary-button{
+  border: 1px solid white;
+  width: 100%;
+}
