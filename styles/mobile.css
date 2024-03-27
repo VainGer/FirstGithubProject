@@ -9,46 +9,45 @@ body {
 }
 
 footer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: #0e2f4e;
 }
-
+#social{
+    grid-template-columns: repeat(4,1fr);
+}
 button {
     background-color: transparent;
     color: white;
     border: none;
 }
-
-button:hover {
-    background-color: #0e2f4e;
-
-}
-
 #header-container {
-    height: 85px;
+    height: 60px;
 }
 
 header {
     grid-template-columns: 1fr 2fr 1fr;
     position: sticky;
-    height: 85px;
+    height: 60px;
     width: 100%;
     z-index: 1;
     position: fixed;
     background-image: linear-gradient(var(--main-bg), rgba(255, 255, 255, 0));
 }
 
-#burger-menu {
-    width: 50px;
-    margin-left: 2vw;
+#burgerbtn {
+    background-image: url(../assets/icons/burger.png);
+    height: 60px;
+    width: 60px;
+    background-size: 100%;
 }
 
 #logo {
     background-image: url(../assets/icons/logo.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0 -8px;
-    width: 105px;
-    height: 85px;
+    background-size: 80%;
+    background-position: 10px -10px;
+    width: 100px;
+    height: 60px;
     margin-left: 20%;
 }
 
@@ -112,8 +111,7 @@ header {
         transition: 0.3s;
         background-image: url(../assets/icons/logo.svg);
         background-repeat: no-repeat;
-        background-position: 50% 15%;
-        background-size: 400px;
+        background-position: 50% 0;
     }
     .secondary-overlay {
         height: 100%;
@@ -126,8 +124,7 @@ header {
         overflow-x: hidden;
         background-image: url(../assets/icons/logo.svg);
         background-repeat: no-repeat;
-        background-position: 50% 15%;
-        background-size: 400px;
+        background-position: 50% 0;
     }
 
     .overlay-content {

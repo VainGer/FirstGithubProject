@@ -35,6 +35,7 @@
 #characters {
   grid-template-columns: 1fr 1fr;
   display: none;
+  height: 0%;
 }
 
 #characters img {

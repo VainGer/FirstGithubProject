@@ -13,18 +13,19 @@
 <body>
     <div id="header-container">
         <header class="grid">
-            <img onclick="openNav()" id="burger-menu" src="./assets/icons/burger.png" alt="">
+            <button onclick="openAndCloseItemInNav('nav')" id="burgerbtn"></button>
             <nav class="overlay" id="nav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="openAndCloseItemInNav('nav')">&times;</a>
                 <ul class="overlay-content">
                     <li>
                         <form action="search">
                             <input type="text" placeholder="Search" id="mobile-search">
                         </form>
                     </li>
-                    <li onclick="openMovies()">Movies</li>
+                    <li><button onclick="openAndCloseItemInNav('movies-menu')">Movies</button></li>
                     <li class="secondary-overlay" id="movies-menu">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeMovies()">&times;</a>
+                        <a href="javascript:void(0)" class="closebtn"
+                            onclick="openAndCloseItemInNav('movies-menu')">&times;</a>
                         <ul class="overlay-content">
                             <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a>
                             </li>
@@ -42,9 +43,10 @@
                                     2</a></li>
                         </ul>
                     </li>
-                    <li onclick="openBooks()">Books</li>
+                    <li><button onclick="openAndCloseItemInNav('books-menu')">Books</button></li>
                     <li class="secondary-overlay" id="books-menu">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeBooks()">&times;</a>
+                        <a href="javascript:void(0)" class="closebtn"
+                            onclick="openAndCloseItemInNav('books-menu')">&times;</a>
                         <ul class="overlay-content">
                             <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher's Stone</a>
                             </li>
@@ -59,9 +61,10 @@
                             <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows</a></li>
                         </ul>
                     </li>
-                    <li onclick="openHouse()">Houese</li>
+                    <li><button onclick="openAndCloseItemInNav('house-menu')">Houese</button></li>
                     <li class="secondary-overlay" id="house-menu">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeHouse()">&times;</a>
+                        <a href="javascript:void(0)" class="closebtn"
+                            onclick="openAndCloseItemInNav('house-menu')">&times;</a>
                         <ul class="overlay-content">
                             <li><a href="#">Gryffindor</a></li>
                             <li><a href="#">Hufflepuff</a></li>
@@ -74,7 +77,7 @@
                 </ul>
             </nav>
             <a href="./index.html" id="logo"></a>
-            <button onclick="openSignup()">SIGN UP</button>
+            <button onclick="openSignup()" id="signUpbtn">SIGN UP</button>
             <div id="sign-up">
                 <form method="get" action="" id="sign-up-form">
                     <button id="back" type="reset" onclick="closeSignup()"></button>
@@ -103,11 +106,11 @@
                     </div>
                     <div class="form-border"></div>
                     <span>Already have an account?<br></span>
-                        <form method="get" action="" id="login">
-                            <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com"><br>
-                            <input type="password" name="password" id="" placeholder="PASSWORD"><br>
-                            <button onclick="openLogin()">LOGIN</button>
-                        </form>
+                    <form method="get" action="" id="login">
+                        <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com"><br>
+                        <input type="password" name="password" id="" placeholder="PASSWORD"><br>
+                        <button onclick="openLogin()">LOGIN</button>
+                    </form>
                 </form>
             </div>
         </header>
@@ -126,114 +129,126 @@
     </section>
     <span>For more categories</span>
     <section class="secondary">
-        <button class="secondary-button" onclick="openChar()"><h2>Characters</h2></button>
+        <button class="secondary-button" onclick="openAccordion('characters')">
+            <h2>Characters</h2>
+        </button>
         <ul id="characters">
-            <li><a href=""><img src="./assets/images/characters/Harry_Potter.webp" alt=""><br><span>Harry
+            <li><a href=""><img src="./assets/images/characters/Harry_Potter.webp" alt=""><span>Harry
                         Potter</span></a>
             </li>
-            <li><a href=""><img src="./assets/images/characters/Hermione_Granger.webp" alt=""><br><span>Hermione
+            <li><a href=""><img src="./assets/images/characters/Hermione_Granger.webp" alt=""><span>Hermione
                         Granger</span></a>
             </li>
             <li><a href=""><img src="./assets/images/characters/Ronald_Weasley.webp" alt="">
-                    <span><br>Ron Weasley</span></a>
+                    <span>Ron Weasley</span></a>
             </li>
-            <li><a href=""><img src="./assets/images/characters/Ginny_Weasley.webp" alt=""><br><span>Ginny
+            <li><a href=""><img src="./assets/images/characters/Ginny_Weasley.webp" alt=""><span>Ginny
                         Weasley</span></a>
             </li>
-            <li><a href=""><img src="./assets/images/characters/Neville_Longbottom.webp" alt=""><br><span>Neville
+            <li><a href=""><img src="./assets/images/characters/Neville_Longbottom.webp" alt=""><span>Neville
                         Longbottom</span></a>
             </li>
-            <li><a href=""><img src="./assets/images/characters/Luna_Lovegood.webp" alt=""><br><span>Luna
+            <li><a href=""><img src="./assets/images/characters/Luna_Lovegood.webp" alt=""><span>Luna
                         Lovegood</span></a>
             </li>
-            <li><a href=""><img src="./assets/images/characters/Severus_Snape.webp" alt=""><br><span>Severus
+            <li><a href=""><img src="./assets/images/characters/Severus_Snape.webp" alt=""><span>Severus
                         Snape</span></a>
             </li>
-            <li><a href=""><img src="./assets/images/characters/Lord_Voldemort.webp" alt=""><br><span>Lord
+            <li><a href=""><img src="./assets/images/characters/Lord_Voldemort.webp" alt=""><span>Lord
                         Voldemort</span></a>
             </li>
         </ul>
     </section>
     <section class="secondary">
-        <button class="secondary-button" onclick="openMov()"><h2>Movies</h2></button>
+        <button class="secondary-button" onclick="openAccordion('movies')">
+            <h2>Movies</h2>
+        </button>
         <ul id="movies">
             <li><a href="./philosophers_stone_movie.html"><img src="./assets/images/movies/hp1.jpg"
-                        alt=""><br><span>Harry
+                        alt=""><span>Harry
                         Potter and the Philosopher's Stone</span></a>
             </li>
             <li><a href="./chamber_of_secrets_movie.html"><img src="./assets/images/movies/hp2.jpg"
-                        alt=""><br><span>Harry Potter and the Chamber of Secrets</span></a>
+                        alt=""><span>Harry Potter and the Chamber of Secrets</span></a>
             </li>
             <li><a href="./prisoner_of_azkaban_movie.html"><img src="./assets/images/movies/hp3.jpg"
-                        alt=""><br><span>Harry Potter
+                        alt=""><span>Harry Potter
                         and the Prisoner of Azkaban</span></a>
             </li>
-            <li><a href="./goblet_of_fire_movie.html"><img src="./assets/images/movies/hp4.jpg" alt=""><br><span>Harry
+            <li><a href="./goblet_of_fire_movie.html"><img src="./assets/images/movies/hp4.jpg" alt=""><span>Harry
                         Potter and
                         the Goblet of Fire</span></a></li>
             <li><a href="./order_of_the_phoenix_movie.html"><img src="./assets/images/movies/hp5.jpg"
-                        alt=""><br><span>Harry
+                        alt=""><span>Harry
                         Potter and the Order of the
                         Phoenix</span></a></li>
             <li><a href="./half-blood_prince_movie.html"><img src="./assets/images/movies/hp6.jpg"
-                        alt=""><br><span>Harry Potter
+                        alt=""><span>Harry Potter
                         and the Half-Blood Prince</span></a></li>
             <li><a href="./deathly_hallows_p1_movie.html"><img src="./assets/images/movies/hp7.jpg"
-                        alt=""><br><span>Harry Potter
+                        alt=""><span>Harry Potter
                         and the Deathly Hallows: Part
                         1</span></a></li>
             <li><a href="./deathly_hallows_p2_movie.html"><img src="./assets/images/movies/hp8.jpg"
-                        alt=""><br><span>Harry Potter
+                        alt=""><span>Harry Potter
                         and the Deathly Hallows: Part
                         2</span></a></li>
         </ul>
     </section>
     <section class="secondary">
-        <button class="secondary-button" onclick="openBook()"><h2>Books</h2></button>
+        <button class="secondary-button" onclick="openAccordion('books')">
+            <h2>Books</h2>
+        </button>
         <ul id="books">
             <li><a href="./philosophers_stone_book.html"><img src="./assets/images/books/hp1.webp"
-                        alt=""><br><span>Harry Potter and the Philosopher's
+                        alt=""><span>Harry Potter and the Philosopher's
                         Stone</span></a>
             </li>
             <li><a href="./chamber_of_secrets_book.html"><img src="./assets/images/books/hp2.webp"
-                        alt=""><br><span>Harry Potter and the Chamber of
+                        alt=""><span>Harry Potter and the Chamber of
                         Secrets</span></a>
             </li>
             <li><a href="./prisoner_of_azkaban_book.html"><img src="./assets/images/books/hp3.webp"
-                        alt=""><br><span>Harry Potter and the Prisoner of
+                        alt=""><span>Harry Potter and the Prisoner of
                         Azkaban</span></a>
             </li>
-            <li><a href="./goblet_of_fire_book.html"><img src="./assets/images/books/hp4.webp" alt=""><br><span>Harry
+            <li><a href="./goblet_of_fire_book.html"><img src="./assets/images/books/hp4.webp" alt=""><span>Harry
                         Potter and the Goblet of
                         Fire</span></a></li>
             <li><a href="./order_of_the_phoenix_book.html"><img src="./assets/images/books/hp5.webp"
-                        alt=""><br><span>Harry Potter and the Order of
+                        alt=""><span>Harry Potter and the Order of
                         the Phoenix</span></a>
             </li>
-            <li><a href="./half-blood_prince_book.html"><img src="./assets/images/books/hp6.webp" alt=""><br><span>Harry
+            <li><a href="./half-blood_prince_book.html"><img src="./assets/images/books/hp6.webp" alt=""><span>Harry
                         Potter and the Half-Blood
                         Prince</span></a></li>
-            <li id="last-book"><a href="./deathly_hallows_book.html"><img src="./assets/images/books/hp7.webp" alt=""><br><span>Harry
+            <li id="last-book"><a href="./deathly_hallows_book.html"><img src="./assets/images/books/hp7.webp"
+                        alt=""><span>Harry
                         Potter and the Deathly
                         Hallows</span></a></li>
         </ul>
     </section>
     <section class="secondary">
-        <button class="secondary-button" onclick="openHouses()"><h2>Hogwarts Houeses</h2></button>
+        <button class="secondary-button" onclick="openAccordion('houses')">
+            <h2>Hogwarts Houeses</h2>
+        </button>
         <ul id="houses" class="grid">
-            <li><a href=""><img src="./assets/images/houses/gryffindor.png" alt=""></a><a href=""><br>Gryffindor</a>
+            <li><a href=""><img src="./assets/images/houses/gryffindor.png" alt=""></a><a href="">Gryffindor</a>
             </li>
-            <li><a href=""><img src="./assets/images/houses/hufflepuff.png" alt=""></a><a href=""><br>Hufflepuff</a>
+            <li><a href=""><img src="./assets/images/houses/hufflepuff.png" alt=""></a><a href="">Hufflepuff</a>
             </li>
-            <li><a href=""><img src="./assets/images/houses/ravenclaw.png" alt=""></a><a href=""><br>Ravenclaw</a></li>
-            <li><a href=""><img src="./assets/images/houses/slytherin.png" alt=""></a><a href=""><br>Slytherin</a></li>
+            <li><a href=""><img src="./assets/images/houses/ravenclaw.png" alt=""></a><a href="">Ravenclaw</a></li>
+            <li><a href=""><img src="./assets/images/houses/slytherin.png" alt=""></a><a href="">Slytherin</a></li>
         </ul>
     </section>
     <footer class="grid">
-        <a href="#"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="./assets/icons/instagram.svg" alt="instagram"></a>
-        <a href="#"><img src="./assets/icons/twitter.png" alt="X"></a>
-        <a href="#"><img src="./assets/icons/tik-tok.svg" alt="tik-tok"></a>
+        <div id="about">INFO ABOUT</div>
+        <div id="social" class="grid">
+            <a href="#"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="./assets/icons/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="./assets/icons/twitter.png" alt="X"></a>
+            <a href="#"><img src="./assets/icons/tik-tok.svg" alt="tik-tok"></a>
+        </div>
     </footer>
 </body>
 

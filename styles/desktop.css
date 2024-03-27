@@ -1,35 +1,18 @@
 @media (min-width :999px) {
-    #burger-menu {
+    #burgerbtn, .closebtn{
         display: none;
     }
-
-    .closebtn {
-        display: none;
-    }
-    #mobile-search{
-        width: 0;
-        height: 0;
-        display: none;
-    }
-    #main-categories{
-        order: 2;        
-    }
-    #categories{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-    #login{
-        order: 3;
-    }
-    #header{
-        height: 12vh;
-    }
-   #header img, button, a{
-    height: 12vh;
-   }
     .secondary-overlay{
         display: none;
     }
-    .mobile-buttons{
-        display: none;
+    #signUpbtn{
+        order: 3;
+    }
+    #nav{
+        order: 2;
+    }
+    #nav ul{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
     }
 }
