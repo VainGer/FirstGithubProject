@@ -1,73 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/mobile.css">
+    <title>Harry Potter and the Half-Blood Prince</title>
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
-    <section id="header">
-        <header>
-            <nav>
-                <ul id="mobile-nav" class="grid">
-                    <li>
-                        <div class="grid, dropDown">
-                            <button onclick="openBurger()" class="dropBtn"><img src="./assets/icons/burger.png"
-                                    alt=""></button>
-                            <ul class="menu-content" id="main-menu-content">
-                                <li>
-                                    <form action="search">
-                                        <input type="search" placeholder="Search">
-                                    </form>
-                                </li>
-                                <li>
-                                    <button onclick="openMovies()">Movies</button>
-                                    <ul id="movies-content" class="menu-content">
-                                        <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
-                                        <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
-                                        <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
-                                        <li><a href="">Harry Potter and the Goblet of Fire</a></li>
-                                        <li><a href="">Harry Potter and the Order of the Phoenix</a></li>
-                                        <li><a href="">Harry Potter and the Half-Blood Prince</a></li>
-                                        <li><a href="">Harry Potter and the Deathly Hallows: Part 1</a></li>
-                                        <li><a href="">Harry Potter and the Deathly Hallows: Part 2</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <button onclick="openBooks()">Books</button>
-                                    <ul id="books-content" class="menu-content">
-                                        <li><a href="">Harry Potter and the Philosopher's Stone</a></li>
-                                        <li><a href="">Harry Potter and the Chamber of Secrets</a></li>
-                                        <li><a href="">Harry Potter and the Prisoner of Azkaban</a></li>
-                                        <li><a href="">Harry Potter and the Goblet of Fire</a></li>
-                                        <li><a href="">Harry Potter and the Order of the Phoenix</a></li>
-                                        <li><a href="">Harry Potter and the Half-Blood Prince</a></li>
-                                        <li><a href="">Harry Potter and the Deathly Hallows</a></li>
-                                    </ul>
-                                </li>
-                                <li><button onclick="openHouses()">Houses</button>
-                                    <ul id="houses-content" class="menu-content">
-                                        <li><a href="">Gryffindor</a></li>
-                                        <li><a href="">Hufflepuff</a></li>
-                                        <li><a href="">Ravenclaw</a></li>
-                                        <li><a href="">Slytherin</a></li>
-                                    </ul>
-                                </li>
-                                <li><button>Gallery</button></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><button onclick="window.location.href='./index.html'""><img src="./assets/icons/logo.svg" alt="Logo"></button></li>
-                    <li>
-                        <ul class="grid" id="sign">
-                            <li><button>Log In</button></li>
-                            <li><button>Sign Up</button></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </section>
+    <h2 class="center">Harry Potter and the Half-Blood Prince</h2>
+    <div class="container">
+        <img id="img" src="./assets/images/movies/hp6.jpg" alt="Harry Potter and the Half-Blood Prince">
+        <table id="table-style">
+
+            <tr class="section-header">
+                <td colspan="2">Film information</td>
+            </tr>
+            <tr>
+                <th>Director(s)</th>
+                <td>
+                    <ul>
+                        <li>David Yates</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Producer(s)</th>
+                <td>
+                    <ul>
+                        <li>David Heyman</li>
+                        <li>David Barron</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Writer(s)</th>
+                <td>
+                    <ul>
+                        <li>Novel: J. K. Rowling</li>
+                        <li>Screenplay: Steve Kloves</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>Star(s)</th>
+                <td>
+                    <ul>
+
+                        <li>Daniel Radcliffe</li>
+                        <li>Rupert Grint</li>
+                        <li>Emma Watson</li>
+                        <li>Helena Bonham Carter</li>
+                        <li>Robbie Coltrane</li>
+                        <li>Michael Gambon</li>
+                        <li>Alan Rickman</li>
+                        <li>Maggie Smith</li>
+                        <li>Jim Broadbent</li>
+                        <li>Timothy Spall</li>
+                        <li>David Thewlis</li>
+                        <li>Julie Walters</li>
+                        <li>Bonnie Wright</li>
+                        <li>David Bradley</li>
+                        <li>Warwick Davis</li>
+                        <li>Tom Felton</li>
+                        <li>Gemma Jones</li>
+                        <li>Helen McCrory</li>
+                        <li>Natalia Tena</li>
+                        <li>Mark Williams</li>
+
+                    </ul>
+                </td>
+            <tr>
+                <th>Distributor(s)</th>
+                <td>Warner Bros.</td>
+            </tr>
+            <tr>
+                <th>Release date(s)</th>
+                <td>
+                    <ul>
+                        <li>15 July 2009</li>
+                    </ul>
+                </td>
+            <tr>
+                <th>Run-time</th>
+                <td>
+                    <ul>
+                        <li>153 minutes</li>
+                    </ul>
+                </td>
+            <tr>
+                <th>Budget</th>
+                <td>$200 million</td>
+            </tr>
+            <tr>
+                <th>Gross box office</th>
+                <td>$937 million</td>
+            <tr>
+                <th>Preceded by</th>
+                <td><a href="http://127.0.0.1:5500/order_of_the_phoenix_movie.html">Harry Potter and the Order of the
+                        Phoenix
+                    </a></td>
+            </tr>
+            <tr>
+                <th>Followed by</th>
+                <td><a href="http://127.0.0.1:5500/deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows:
+                        Part 1</a>
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <p>
+    <blockquote>"Dark Secrets Revealed"
+        — Official tagline</blockquote>
+    Harry Potter and the Half-Blood Prince is a British-American fantasy film based on the sixth novel by J. K. Rowling.
+    This film was released on 15 July 2009 telling about the adventures during the school year 1996–1997. David Yates
+    returned to direct the sequel to Harry Potter and the Order of the Phoenix, as did David Heyman and David Barron to
+    produce,[3] and Steve Kloves, though he did not write the fifth film, returned to write.[4] Reprising their roles
+    from earlier films are Daniel Radcliffe, Rupert Grint, Emma Watson, Helena Bonham Carter, Robbie Coltrane, Michael
+    Gambon, Alan Rickman, Maggie Smith, Timothy Spall, David Thewlis, Julie Walters, Bonnie Wright, David Bradley,
+    Warwick Davis, Tom Felton, Gemma Jones, Natalia Tena and Mark Williams, while Jim Broadbent and Helen McCrory make
+    their debut for the series.
+
+    Filming began on 24 September 2007. Unlike the previous film, the sixth film was released in regular theatres on 15
+    July and IMAX 3-D on 29 July because of the IMAX release of Transformers: Revenge of the Fallen.[5] The film was
+    chosen to be screened at the Royal Film Performance on 17 November 2008, but due to the date of release being pushed
+    back, it was not shown. On 7 July 2009, at the world premiere of Half-Blood Prince in London, the cast and crew all
+    wore white ribbons in memory and tribute of 18-year-old British actor and co-star Robert Knox. Knox, who played
+    Marcus Belby in the film, was stabbed to death on 24 May 2008.
+
+    The film grossed $933 million worldwide, making it the second highest-grossing film of 2009 (behind Avatar) and the
+    ninth highest-grossing film of all time at the time (behind Titanic, The Lord of the Rings: The Return of the King,
+    Pirates of the Caribbean: Dead Man's Chest, The Dark Knight, The Philosopher's Stone, Pirates of the Caribbean: At
+    World's End, The Order of the Phoenix and The Lord of the Rings: The Two Towers).
+    </p>
 </body>
+
+
+
 </html>
