@@ -92,32 +92,51 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  #characters img {
-    scale: 90%;
+  #characters a {
+    width: 50%;
+    margin-left: 25%;
   }
 
   #movies {
+    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
-  #movies img{
+
+  #movies a {
     scale: 90%;
   }
-  #books{
+
+  #books {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
   }
-  #books img{
-    scale: 90%;
+
+  #books a {
+    width: 50%;
+    margin-left: 25%;
   }
-  #last-book{
+
+  #last-book {
     grid-column: 2/3;
   }
-  #houses{
+
+  #houses {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #houses img{
+
+  #houses a {
     width: 50%;
+    margin-left: 25%;
+  }
+
+  #characters a img,
+  #movies a img,
+  #books a img,
+  #houses a img {
+    border: 2px solid white;
+    margin-top: 10px;
   }
 }
