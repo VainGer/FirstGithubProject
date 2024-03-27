@@ -8,7 +8,7 @@
   height: 90vh;
   background-image: url(../assets/images/hero.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 100%;
 }
 
 #space {
@@ -20,51 +20,104 @@
   background-color: rgba(73, 93, 110, 0.356);
 }
 
-
-#hero {
-  height: 90vh;
-  background-size: cover;
-  background-position: 50% 5%;
-}
-
-#houses {
-  grid-template-columns: 1fr 1fr;
+.secondary-button {
   display: none;
 }
 
-#characters {
-  grid-template-columns: 1fr 1fr;
-  display: none;
-  height: 0%;
+@media (max-width: 425px) {
+  #houses {
+    grid-template-columns: 1fr 1fr;
+    display: none;
+  }
+
+  #characters {
+    grid-template-columns: 1fr 1fr;
+    display: none;
+    height: 0%;
+  }
+
+  #characters img {
+    scale: 90%;
+  }
+
+  #movies {
+    grid-template-columns: 1fr 1fr;
+    display: none;
+  }
+
+  #movies img {
+    scale: 90%;
+  }
+
+  #books {
+    grid-template-columns: 1fr 1fr;
+    display: none;
+  }
+
+  #books img {
+    scale: 90%;
+  }
+
+  #last-book {
+    grid-column: 1/3;
+  }
+
+  .secondary-button {
+    display: block;
+    border: 1px solid white;
+    width: 100%;
+  }
+
+  #hero {
+    height: 90vh;
+    background-size: cover;
+    background-position: 50% 5%;
+  }
+
+  .secondaryh2 {
+    display: none;
+  }
 }
 
-#characters img {
-  scale: 90%;
-}
+/* tablet layout */
+@media (min-width: 425px) {
+  #hero {
+    height: 90vh;
+    background-size: cover;
+    background-position: 50% 5%;
+  }
 
-#movies {
-  grid-template-columns: 1fr 1fr;
-  display: none;
-}
+  #characters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-#movies img {
-  scale: 90%;
-}
+  #characters img {
+    scale: 90%;
+  }
 
-#books {
-  grid-template-columns: 1fr 1fr;
-  display: none;
-}
-
-#books img {
-  scale: 90%;
-}
-
-#last-book {
-  grid-column: 1/3;
-}
-
-.secondary-button{
-  border: 1px solid white;
-  width: 100%;
+  #movies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #movies img{
+    scale: 90%;
+  }
+  #books{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #books img{
+    scale: 90%;
+  }
+  #last-book{
+    grid-column: 2/3;
+  }
+  #houses{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #houses img{
+    width: 50%;
+  }
 }

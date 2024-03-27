@@ -1,6 +1,5 @@
-@media (min-width: 425px) {
+@media (min-width: 425px) and (max-width: 999px) {
     #logo {
-        position: relative;
         margin-left: calc(25% + 6vw);
     }
 }

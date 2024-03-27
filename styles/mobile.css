@@ -12,14 +12,17 @@ footer {
     grid-template-columns: 1fr 1fr;
     background-color: #0e2f4e;
 }
-#social{
-    grid-template-columns: repeat(4,1fr);
+
+#social {
+    grid-template-columns: repeat(4, 1fr);
 }
+
 button {
     background-color: transparent;
     color: white;
     border: none;
 }
+
 #header-container {
     height: 60px;
 }
@@ -48,9 +51,11 @@ header {
     background-position: 10px -10px;
     width: 100px;
     height: 60px;
-    margin-left: 20%;
-}
 
+}
+#signUpbtn{
+    padding-right: 0;
+}
 #sign-up {
     display: none;
     position: fixed;
@@ -83,21 +88,30 @@ header {
 #sign-up-form {
     padding-top: 20vh;
 }
-.form-border{
+
+.form-border {
     margin-top: 3vh;
     border: 3px solid black;
 }
-.submit{
+
+.submit {
     margin-top: 2vh;
 }
-#sign-up-with{
+
+#sign-up-with {
     grid-template-columns: 1fr 1fr;
 }
-#sign-up-with img{
+
+#sign-up-with img {
     width: 50px;
 }
-
+.desktopbtn{
+    display: none;
+}
 @media (max-width :999px) {
+    #logo {
+        margin-left: 20%;
+    }
 
     .overlay {
         height: 100%;
@@ -113,6 +127,7 @@ header {
         background-repeat: no-repeat;
         background-position: 50% 0;
     }
+
     .secondary-overlay {
         height: 100%;
         width: 0;
@@ -149,38 +164,43 @@ header {
 }
 
 .container {
-    text-align: center; 
+    text-align: center;
 }
 
 .center {
     text-align: center;
 }
 
-#table-style, th, td {
+#table-style,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
-    margin: auto; 
+    margin: auto;
     text-align: center;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
 }
 
 img {
-    display: block; 
-    margin: 20px auto; 
-    max-width: 100%; 
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
 }
+
 .section-header {
-    background-color: #0e2f4e; 
+    background-color: #0e2f4e;
     font-weight: bold;
 }
+
 blockquote {
     margin: 20px 0;
-    padding: 20px; 
-    background-color: #0e2f4e; 
-    border-left: 5px solid #ccc; 
-    font-style: italic; 
+    padding: 20px;
+    background-color: #0e2f4e;
+    border-left: 5px solid #ccc;
+    font-style: italic;
     text-align: center;
 }
