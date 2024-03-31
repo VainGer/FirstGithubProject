@@ -3,12 +3,10 @@
 @import url(./desktop.css);
 @import url(./tablet.css);
 @import url(./vars.css);
-body{
-    padding-inline: 8px;
-}
 
 .container {
     text-align: center;
+    padding-inline: 8px;
 }
 
 .center {

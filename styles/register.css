@@ -9,13 +9,16 @@ form {
 }
 
 h1 {
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 .border {
     border: 1px solid var(--primary-ft);
+    margin-top: 24px;
 }
-
+.blank{
+    display: none;
+}
 #back {
     width: 50px;
     height: 50px;
@@ -26,24 +29,33 @@ h1 {
     left: 30px;
 }
 
-#form-container {
-    position: fixed;
-    width: 100%;
-}
-
-#signInWith {
+#signUpWith {
     padding-top: 16px;
-    grid-template-columns: 1fr 1fr;
-
+    text-align: center;
+}
+@media(max-width: 425px){
+    #signUpWith {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-#signInWith img {
+#signUpWith img {
     width: 120px;
 }
 
-#googleAcc {
-    text-align: end;
-}
-#appleId{
-    text-align: start;
+@media(min-width: 425px) {
+    #signUpWith{
+        grid-template-columns: 1fr 0fr 0fr 1fr;
+    }
+
+    #appleId {
+        width: 120px;
+    }
+
+    #googleAcc {
+        width: 120px;
+    }
+    .blank{
+        display: block;
+    }
 }

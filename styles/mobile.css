@@ -12,7 +12,7 @@ body {
 }
 footer {
     grid-template-columns: 1fr 1fr;
-    background-color: #0e2f4e;
+    background-color: var(--headerFooter-bg)
 }
 
 #social {
@@ -34,6 +34,7 @@ button {
 #mobile-header-bg{
     height: 60px;
     width: 100%;
+    background-color: var(--headerFooter-bg);
 }
 
 
@@ -45,7 +46,7 @@ header {
     width: 100%;
     z-index: 1;
     position: fixed;
-    background-image: linear-gradient(var(--main-bg), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(var(--header-bg), rgba(255, 255, 255, 0));
 }
 
 #burgerbtn {
@@ -69,7 +70,7 @@ header {
 
 
 #mobile-search {
-    background-color: rgba(255, 255, 255, 0.815);
+    background-color: rgb(255, 255, 255);
 }
 .desktopbtn{
     display: none;
@@ -89,12 +90,12 @@ header {
         z-index: 1;
         left: 0;
         top: 0;
-        background-color: var(--overlay-bg);
         overflow-x: hidden;
         transition: 0.3s;
         background-image: url(../assets/icons/logo.svg);
         background-repeat: no-repeat;
         background-position: 50% 0;
+        background-color: var(--headerFooter-bg);
     }
 
     .secondary-overlay {
@@ -104,11 +105,11 @@ header {
         z-index: 1;
         left: 0;
         top: 0;
-        background-color: var(--overlay-bg);
         overflow-x: hidden;
         background-image: url(../assets/icons/logo.svg);
         background-repeat: no-repeat;
         background-position: 50% 0;
+        background-color: var(--headerFooter-bg);
     }
 
     .overlay-content {

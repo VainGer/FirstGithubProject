@@ -1,8 +1,9 @@
 :root {
     /*colors*/
-    --main-bg: rgba(19, 64, 105, 1);
-    --header-bg: rgb(19, 63, 105);
+    --main-bg: rgba(16, 51, 83);
+    --headerFooter-bg: rgba(25, 37, 75, 1);
     --overlay-bg: rgb(19, 63, 105);
+    --hover-clr: rgb(70, 86, 90);
     /* font colors */
     --primary-ft: rgb(255, 255, 255);
 }

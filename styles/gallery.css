@@ -1,0 +1,14 @@
+@import url(./reset.css);
+@import url(./mobile.css);
+@import url(./desktop.css);
+@import url(./tablet.css);
+@import url(./vars.css);
+
+.images {
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+}
+
+.images img {
+    padding: 8px;
+}

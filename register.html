@@ -18,15 +18,15 @@
         <form action="">
             <label for="name"><b>Name</b></label>
             <br>
-            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="text" placeholder="Your Name" id="name">
             <br>
             <label for="email"><b>Email</b></label>
             <br>
-            <input type="text" placeholder="Your Email" name="email" id="email" required>
+            <input type="text" placeholder="Your Email" name="email" id="email">
             <br>
             <label for="password"><b>Password</b></label>
             <br>
-            <input type="password" name="password" placeholder="Enter your password" id="password" required>
+            <input type="password" name="password" placeholder="Enter your password" id="password">
             <br>
             <select name="House" id="house">
                 <option selected disabled>Choose Your House</option>
@@ -38,32 +38,39 @@
             <br>
             <input type="submit" name="signUp" id="signUp" value="Sign Up">
             <br>
-            <span>Sign In With</span>
             <div class="border"></div>
-            <div id="signInWith" class="grid">
+            <span>Sign Up With</span>
+            <div id="signInWith-container"></div>
+            <div id="signUpWith" class="grid">
+                <div class="blank"></div>
                 <div id="googleAcc">
-                    <span>Google Accaunt</span>
+                    <button onclick="window.location.href='./index.html'"><img src="./assets/icons/google.svg"
+                            alt="google"></button>
                     <br>
-                    <button><img src="./assets/icons/google.svg" alt=""></button>
+                    <span>Google Accaunt</span>
                 </div>
                 <div id="appleId">
-                    <span>Apple ID</span>
+                    <button onclick="window.location.href='index.html'"><img src="./assets/icons/apple.svg"
+                            alt="apple"></button>
                     <br>
-                    <button><img src="./assets/icons/apple.svg" alt=""></button>
+                    <span>Apple ID</span>
                 </div>
+                <div class="blank"></div>
             </div>
             <div class="border"></div>
             <span>Alreay have an accont?</span>
             <div id="alreadyHaveAcc">
-                <label for="email"><b>Email</b></label>
-                <br>
-                <input type="text" placeholder="Your Email" name="email" id="email" required>
-                <br>
-                <label for="password"><b>Password</b></label>
-                <br>
-                <input type="password" name="password" placeholder="Enter your password" id="password" required>
-                <br>
-                <input type="submit" name="logIn" id="LogIn" value="Log In"">
+                <form action="login">
+                    <label for="email"><b>Email</b></label>
+                    <br>
+                    <input type="text" placeholder="Your Email" name="email" id="email">
+                    <br>
+                    <label for="password"><b>Password</b></label>
+                    <br>
+                    <input type="password" name="password" placeholder="Enter your password" id="password">
+                    <br>
+                    <input type="submit" name="logIn" id="LogIn" value="Log In"">
+            </form>
             </div>
         </form>
     </div>

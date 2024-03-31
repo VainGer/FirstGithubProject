@@ -6,6 +6,10 @@
         display: none;
     }
 
+    button {
+        border-radius: 30%;
+    }
+
     .desktopbtn {
         display: block;
         text-align: center;
@@ -13,23 +17,23 @@
         height: 100%;
     }
 
-    .desktopbtn:hover {
-        background-color: rgb(88, 88, 88);
+    .desktopbtn:hover, .btn:hover {
+        background-color: var(--hover-clr);
     }
 
     .dropdown {
         position: absolute;
         display: none;
         text-align: left;
-        background-color: var(--main-bg);
+        background-color: var(--headerFooter-bg);
     }
 
     .dropdown li:hover {
-        background-color: grey;
+        background-color: var(--hover-clr);
     }
 
     header {
-        background-color: var(--main-bg);
+        background-color: var(--headerFooter-bg);
     }
 
     #signUpbtn {
@@ -55,7 +59,6 @@
     #loginbtn {
         display: block;
     }
-
     #search-li {
         order: 6;
         padding-top: 17px;

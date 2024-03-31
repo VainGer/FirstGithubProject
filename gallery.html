@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="./styles/articles.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
     <script src="./js/script.js"></script>
 </head>
-<h1>Films </h1>
+
 <body>
     <div id="mobile-header-bg"></div>
-    <header class="grid">
+    <header class="grid" id="header">
         <button onclick="openAndCloseItemInNav('nav')" id="burgerbtn"></button>
         <nav class="overlay" id="nav">
             <a href="javascript:void(0)" class="closebtn" onclick="openAndCloseItemInNav('nav')">&times;</a>
@@ -91,13 +92,13 @@
                         <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
                     </ul>
                 </li>
-                <li><button onclick="window.location.href='./gallery.html'">Gallery</button></li>
+                <li><button class="btn" onclick="window.location.href='./gallery.html'">Gallery</button></li>
             </ul>
         </nav>
         <a href="./index.html" id="logo"></a>
         <div id="login" class="grid">
-            <button onclick="window.location.href='./register.html'">SIGN UP</button>
-            <button onclick="openAndCloseItemInNav('loginForm')" id="loginbtn">LOG IN</button>
+            <button onclick="window.location.href='./register.html'" class="btn">SIGN UP</button>
+            <button onclick="openAndCloseItemInNav('loginForm')" class="btn" id="loginbtn">LOG IN</button>
             <form action="" id="loginForm">
                 <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com"><br>
                 <input type="password" name="password" id="" placeholder="PASSWORD"><br>
@@ -105,12 +106,40 @@
             </form>
         </div>
     </header>
-    <h2>Harry Potter Films</h2>
-    <P>J.K. Rowlings beloved Harry Potter novels were brought to life on screen in eight blockbuster films and went on to inspire the Fantastic Beasts film series,<br>
-         taking us into a new era of the Wizarding World.
-    </P>
-    <P></P>
-    <P></P>
-    
+    <div class="grid images">
+        <a target="_blank" href="./assets/images/gallery/1.jpg">
+            <img src="./assets/images/gallery/1.jpg" alt=""></a>
+        <a target="_blank" href="./assets/images/gallery/2.jpg">
+            <img src="./assets/images/gallery/2.jpg" alt=""></a>
+        <div>
+            <a target="_blank" href="./assets/images/gallery/3.jpg">
+                <img src="./assets/images/gallery/3.jpg" alt=""></a>
+            <a target="_blank" href="./assets/images/gallery/4.jpg">
+                <img src="./assets/images/gallery/4.jpg" alt=""></a>
+            <a target="_blank" href="./assets/images/gallery/portrait2.jpg">
+                <img src="./assets/images/gallery/portrait2.jpg" alt=""></a>
+        </div>
+        <div>
+            <a target="_blank" href="./assets/images/gallery/portarit.jpg">
+                <img src="./assets/images/gallery/portarit.jpg" alt=""></a>
+            <a target="_blank" href="./assets/images/gallery/5.jpg">
+                <img src="./assets/images/gallery/5.jpg" alt=""></a>
+            <a target="_blank" href="./assets/images/gallery/8.jpg">
+                <img src="./assets/images/gallery/8.jpg" alt=""></a>
+        </div>
+        <a target="_blank" href="./assets/images/gallery/6.jpg">
+            <img src="./assets/images/gallery/6.jpg" alt=""></a>
+        <a target="_blank" href="./assets/images/gallery/9.jpg">
+            <img src="./assets/images/gallery/9.jpg" alt=""></a>
+        <div>
+            <a target="_blank" href="./assets/images/gallery/10.jpg">
+                <img src="./assets/images/gallery/10.jpg" alt=""></a>
+            <a target="_blank" href="./assets/images/gallery/12.jpg">
+                <img src="./assets/images/gallery/12.jpg" alt=""></a>
+        </div>
+        <a target="_blank" href="./assets/images/gallery/portrait3.jpg">
+            <img src="./assets/images/gallery/portrait3.jpg" alt=""></a>
+    </div>
 </body>
+
 </html>

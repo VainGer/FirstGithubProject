@@ -30,11 +30,9 @@ td {
 }
 
 img {
-    display: block;
-    padding: 20px auto;
     max-width: 100%;
+    padding-left: 24vw;
 }
-
 .section-header {
     background-color: #0e2f4e;
     font-weight: bold;
@@ -53,9 +51,21 @@ blockquote {
     order: 3;
 }
 
+#img-desktop {
+    display: none;
+}
+
 @media(min-width: 425px) {
     .container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #img-mobile {
+        display: none;
+    }
+
+    #img-desktop {
+        display: block;
     }
 
     #article {
@@ -64,19 +74,25 @@ blockquote {
     }
 
     img {
-        width: 230px;
-        padding-left: 4%;
+        width: 100%;
+        padding-right: 10%;
+        padding-left: 0;
     }
 }
 
 @media(min-width: 767px) {
-    .container{
+    .container {
         grid-template-columns: 2fr 2fr 1fr;
     }
-    #article{
+
+    #article {
         grid-column: 1/4;
     }
-    #table-style{
+
+    #table-style {
         grid-column: 2/3;
+    }
+    img{
+        width: 100%;
     }
 }
