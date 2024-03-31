@@ -1,4 +1,4 @@
-@media (min-width :999px) {
+@media (min-width :767px) {
 
     #burgerbtn,
     .closebtn,
@@ -11,9 +11,11 @@
         text-align: center;
         padding-top: 4%;
     }
-    .desktopbtn:hover{
+
+    .desktopbtn:hover {
         background-color: rgb(88, 88, 88);
     }
+
     .dropdown {
         position: absolute;
         display: none;
@@ -21,8 +23,13 @@
         text-align: left;
         background-color: var(--main-bg);
     }
-    .overlay-content a:hover {
-        background-color: rgb(88, 88, 88);
+
+    .dropdown li:hover {
+        background-color: grey;
+    }
+
+    header {
+        background-color: var(--main-bg);
     }
 
     #signUpbtn {
@@ -40,10 +47,22 @@
         width: 50%;
     }
 
+    #login {
+        grid-template-columns: 1fr 1fr;
+        order: 3;
+    }
+    #loginbtn{
+        display: block;
+    }
     #search-box {
         order: 6;
     }
-    #logo{
+
+    #logo {
         margin-left: 15%;
+    }
+    #loginForm{
+        height: 100vh;
+        width: 100vw;
     }
 }

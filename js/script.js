@@ -1,6 +1,6 @@
-var desktopWidth = window.matchMedia("(min-width: 999px)");
+var desktopWidth = window.matchMedia("(min-width: 767px)");
 var tabletWidth = window.matchMedia("(min-width: 425px)");
-var desktopMaxWidth = window.matchMedia("(max-width: 999px)");
+var desktopMaxWidth = window.matchMedia("(max-width: 767px)");
 var tabletMaxWidth = window.matchMedia("(max-width: 425px)");
 function fromMobileToDesktop(mediaWidth) {
   if (mediaWidth.matches) {

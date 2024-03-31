@@ -22,8 +22,7 @@
                             <input type="text" placeholder="Search" id="search">
                         </form>
                     </li>
-                    <li class="mobile-item"><button onclick="openAndCloseItemInNav('movies-menu')" id="moviebtn">
-                            Movies</button></li>
+                    <li class="mobile-item"><button onclick="openAndCloseItemInNav('movies-menu')">Movies</button></li>
                     <li class="secondary-overlay" id="movies-menu">
                         <a href="javascript:void(0)" class="closebtn"
                             onclick="openAndCloseItemInNav('movies-menu')">&times;</a>
@@ -77,46 +76,32 @@
                             <li><a href="#">Slytherin</a></li>
                         </ul>
                     </li>
-                    <li><button>Characters</button></li>
+                    <li class="mobile-item"><button
+                            onclick="openAndCloseItemInNav('characters-menu')">Characters</button></li>
+                    <li class="secondary-overlay" id="characters-menu">
+                        <a href="javascript:void(0)" class="closebtn"
+                            onclick="openAndCloseItemInNav('characters-menu')">&times;</a>
+                        <button class="desktopbtn"
+                            onclick="openAndCloseItemInNav('desktop-characters')">Characters</button>
+                        <ul class="overlay-content dropdown" id="desktop-characters">
+                            <li><a href="./harry_potter.html">Harry Potter</a></li>
+                            <li><a href="./hermione_granger.html">Hermione Granger</a></li>
+                            <li><a href="./ron_weasley.html">Ron Weasley</a></li>
+                            <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
+                            <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
+                            <li><a href="">Luna Lovegood</a></li>
+                            <li><a href="./severus_snape.html">Severus Snape</a></li>
+                            <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
+                        </ul>
+                    </li>
                     <li><button>Gallery</button></li>
                 </ul>
             </nav>
             <a href="./index.html" id="logo"></a>
-            <button onclick="openSignup()" id="signUpbtn">SIGN UP</button>
-            <div id="sign-up">
-                <form method="get" action="" id="sign-up-form">
-                    <button id="back" type="reset" onclick="closeSignup()"></button>
-                    <label for="">FIRST NAME <br></label>
-                    <input type="text" name="firstName" id=""><br>
-                    <label for="">LAST NAME <br></label>
-                    <input type="text" name="lastName" id=""><br>
-                    <label for="">DATE OF BIRTH <br></label>
-                    <input type="date" name="birthDate" id=""><br>
-                    <label for="">EMAIL ADRESS <br></label>
-                    <input type="email" name="email" id=""><br>
-                    <label for="">PASSWORD <br></label>
-                    <input type="password" name="password" id=""><br>
-                    <label for="">CHOOSE YOUR HOUSE <br></label>
-                    <select name="House" id="house-select">
-                        <option value="Gryffindor">Gryffindor</option>
-                        <option value="Slytherin">Slytherin</option>
-                        <option value="Ravenclaw">Ravenclaw</option>
-                        <option value="Hufflepuff">Hufflepuff</option>
-                    </select><br>
-                    <input class="submit" type="submit" value="SIGN UP">
-                    <div class="form-border"></div>
-                    <div id="sign-up-with" class="grid">
-                        <a href=""><img src="./assets/icons/google.svg" alt=""><span>Google account</span></a>
-                        <a href=""><img src="./assets/icons/apple.svg" alt=""><span>Apple ID</span></a>
-                    </div>
-                    <div class="form-border"></div>
-                    <span>Already have an account?<br></span>
-                    <form method="get" action="" id="login">
-                        <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com"><br>
-                        <input type="password" name="password" id="" placeholder="PASSWORD"><br>
-                        <button onclick="openLogin()">LOGIN</button>
-                    </form>
-                </form>
+            <div id="login" class="grid">
+                <button onclick="window.location.href='./register.html'">SIGN UP</button>
+                <button onclick="openAndCloseItemInNav('loginForm')" id="loginbtn">LOG IN</button>
+              
             </div>
         </header>
     </div>
@@ -138,17 +123,27 @@
     </button>
     <h2 class="secondaryh2">Characters</h2>
     <section id="characters">
-        <a href="http://127.0.0.1:5500/harry_potter.html"><img src="./assets/images/characters/Harry_Potter.webp" alt=""><span>Harry Potter</span></a>
-        <a href="http://127.0.0.1:5500/hermione_granger.html"><img src="./assets/images/characters/Hermione_Granger.webp" alt=""><span>Hermione Granger</span></a>
-        <a href="http://127.0.0.1:5500/ron_weasley.html"><img src="./assets/images/characters/Ronald_Weasley.webp" alt=""><span>Ron Weasley</span></a>
-        <a href="http://127.0.0.1:5500/ginny_weasley.html"><img src="./assets/images/characters/Ginny_Weasley.webp" alt=""><span>Ginny Weasley</span></a>
-        <a href="http://127.0.0.1:5500/neville_longbottom.html"><img src="./assets/images/characters/Neville_Longbottom.webp" alt=""><span>Neville Longbottom</span></a>
-        <a href="http://127.0.0.1:5500/neville_longbottom.html"><img src="./assets/images/characters/Luna_Lovegood.webp" alt=""><span>Luna Lovegood</span></a>
-        <a href="http://127.0.0.1:5500/severus_snape.html"><img src="./assets/images/characters/Severus_Snape.webp" alt=""><span>Severus Snape</span></a>
-        <a href="http://127.0.0.1:5500/lord_voldemort.html"><img src="./assets/images/characters/Lord_Voldemort.webp" alt=""><span>Lord Voldemort</span></a>
+        <a href="./harry_potter.html"><img src="./assets/images/characters/Harry_Potter.webp"
+                alt=""><span>Harry Potter</span></a>
+        <a href="./hermione_granger.html"><img
+                src="./assets/images/characters/Hermione_Granger.webp" alt=""><span>Hermione Granger</span></a>
+        <a href="./ron_weasley.html"><img src="./assets/images/characters/Ronald_Weasley.webp"
+                alt=""><span>Ron Weasley</span></a>
+        <a href="ginny_weasley.html"><img src="./assets/images/characters/Ginny_Weasley.webp"
+                alt=""><span>Ginny Weasley</span></a>
+        <a href="./neville_longbottom.html"><img
+                src="./assets/images/characters/Neville_Longbottom.webp" alt=""><span>Neville Longbottom</span></a>
+        <a href="neville_longbottom.html"><img src="./assets/images/characters/Luna_Lovegood.webp"
+                alt=""><span>Luna Lovegood</span></a>
+        <a href="severus_snape.html"><img src="./assets/images/characters/Severus_Snape.webp"
+                alt=""><span>Severus Snape</span></a>
+        <a href="lord_voldemort.html"><img src="./assets/images/characters/Lord_Voldemort.webp"
+                alt=""><span>Lord Voldemort</span></a>
     </section>
     <h2 class="secondaryh2">Movies</h2>
-    <button class="secondary-button" onclick="openAccordion('movies')"><h2>Movies</h2></button>
+    <button class="secondary-button" onclick="openAccordion('movies')">
+        <h2>Movies</h2>
+    </button>
     <section id="movies">
         <a href="./philosophers_stone_movie.html"><img src="./assets/images/movies/hp1.jpg" alt=""><span>Harry
                 Potter and the Philosopher's Stone</span></a>
@@ -204,7 +199,10 @@
         <a href=""><img src="./assets/images/houses/slytherin.png" alt="">Slytherin</a>
     </section>
     <footer class="grid">
-        <div id="about">INFO ABOUT</div>
+        <div id="about">
+            <h2>About us</h2><br>
+          
+        </div>
         <div id="social" class="grid">
             <a href="#"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
             <a href="#"><img src="./assets/icons/instagram.svg" alt="instagram"></a>

@@ -7,16 +7,24 @@ body {
     background-color: var(--main-bg);
     text-align: center;
 }
-
+#loginbtn{
+    display: none;
+}
 footer {
     grid-template-columns: 1fr 1fr;
     background-color: #0e2f4e;
 }
 
 #social {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 24px;
+    padding-left: 25%;
 }
-
+#social a,#social img{
+    margin: 0;
+    height: 30px;
+    width: 30px;
+}
 button {
     background-color: transparent;
     color: white;
@@ -39,9 +47,11 @@ header {
 
 #burgerbtn {
     background-image: url(../assets/icons/burger.png);
-    height: 60px;
-    width: 60px;
+    width: 50px;
+    size: 50px;
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
 }
 
 #logo {
@@ -53,22 +63,6 @@ header {
     height: 60px;
 
 }
-#signUpbtn{
-    padding-right: 0;
-}
-#sign-up {
-    display: none;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    background-color: var(--main-bg);
-    background-image: url(../assets/icons/logo.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    text-align: center;
-}
-
 #back {
     background-image: url(../assets/icons/back.svg);
     background-size: 100%;
@@ -84,35 +78,17 @@ header {
 #mobile-search {
     background-color: rgba(255, 255, 255, 0.815);
 }
-
-#sign-up-form {
-    padding-top: 20vh;
-}
-
-.form-border {
-    margin-top: 3vh;
-    border: 3px solid black;
-}
-
-.submit {
-    margin-top: 2vh;
-}
-
-#sign-up-with {
-    grid-template-columns: 1fr 1fr;
-}
-
-#sign-up-with img {
-    width: 50px;
-}
 .desktopbtn{
     display: none;
 }
-@media (max-width :999px) {
+
+@media (max-width :767px) {
     #logo {
         margin-left: 20%;
     }
-
+    #loginForm{
+        display: none;
+    }
     .overlay {
         height: 100%;
         width: 0;
