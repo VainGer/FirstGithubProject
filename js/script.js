@@ -34,7 +34,6 @@ function openAndCloseItemInNav(id) {
     document.getElementById(id).style.display = "block";
     if (document.getElementById(id).style.width === "100%") {
       document.getElementById(id).style.width = "0%";
-      document.getElementById(id).style.display = "none";
     }
     else {
       document.getElementById(id).style.width = "100%";
@@ -62,3 +61,4 @@ function openAccordion(id) {
     document.getElementById(id).style.display = "grid";
   }
 }
+

@@ -7,44 +7,64 @@
     <meta name="keywords"
         content="Harry Potter, the boy who lived, avada kedabra, Ron, Hermione, Voldemort, Dumbledore">
     <title>Register</title>
-    <link rel="icon" href="./images/png-transparent-harry-potter-icon-thumbnail.png">
     <link rel="stylesheet" href="./styles/register.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
-    <div id="sign-up">
-        <form method="get" action="" id="sign-up-form">
-            <button id="back" type="reset" onclick="closeSignup()"></button>
-            <label for="">FIRST NAME <br></label>
-            <input type="text" name="firstName" id=""><br>
-            <label for="">LAST NAME <br></label>
-            <input type="text" name="lastName" id=""><br>
-            <label for="">DATE OF BIRTH <br></label>
-            <input type="date" name="birthDate" id=""><br>
-            <label for="">EMAIL ADRESS <br></label>
-            <input type="email" name="email" id=""><br>
-            <label for="">PASSWORD <br></label>
-            <input type="password" name="password" id=""><br>
-            <label for="">CHOOSE YOUR HOUSE <br></label>
-            <select name="House" id="house-select">
-                <option value="Gryffindor">Gryffindor</option>
-                <option value="Slytherin">Slytherin</option>
-                <option value="Ravenclaw">Ravenclaw</option>
-                <option value="Hufflepuff">Hufflepuff</option>
-            </select><br>
-            <input class="submit" type="submit" value="SIGN UP">
-            <div class="form-border"></div>
-            <div id="sign-up-with" class="grid">
-                <a href=""><img src="./assets/icons/google.svg" alt=""><span>Google account</span></a>
-                <a href=""><img src="./assets/icons/apple.svg" alt=""><span>Apple ID</span></a>
+    <h1>Sign Up</h1>
+    <button id="back" onclick="history.back()"></button>
+    <div id="form-container">
+        <form action="">
+            <label for="name"><b>Name</b></label>
+            <br>
+            <input type="text" placeholder="Your Name" id="name" required>
+            <br>
+            <label for="email"><b>Email</b></label>
+            <br>
+            <input type="text" placeholder="Your Email" name="email" id="email" required>
+            <br>
+            <label for="password"><b>Password</b></label>
+            <br>
+            <input type="password" name="password" placeholder="Enter your password" id="password" required>
+            <br>
+            <select name="House" id="house">
+                <option selected disabled>Choose Your House</option>
+                <option value="gryffindor">Gryffindor</option>
+                <option value="ravenclaw">Ravenclaw</option>
+                <option value="hufflepuff">Hufflepuff</option>
+                <option value="slytherin">Slytherin</option>
+            </select>
+            <br>
+            <input type="submit" name="signUp" id="signUp" value="Sign Up">
+            <br>
+            <span>Sign In With</span>
+            <div class="border"></div>
+            <div id="signInWith" class="grid">
+                <div id="googleAcc">
+                    <span>Google Accaunt</span>
+                    <br>
+                    <button><img src="./assets/icons/google.svg" alt=""></button>
+                </div>
+                <div id="appleId">
+                    <span>Apple ID</span>
+                    <br>
+                    <button><img src="./assets/icons/apple.svg" alt=""></button>
+                </div>
             </div>
-            <div class="form-border"></div>
-            <span>Already have an account?<br></span>
-            <form method="get" action="" id="login">
-                <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com"><br>
-                <input type="password" name="password" id="" placeholder="PASSWORD"><br>
-                <button onclick="openLogin()">LOGIN</button>
-            </form>
+            <div class="border"></div>
+            <span>Alreay have an accont?</span>
+            <div id="alreadyHaveAcc">
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="text" placeholder="Your Email" name="email" id="email" required>
+                <br>
+                <label for="password"><b>Password</b></label>
+                <br>
+                <input type="password" name="password" placeholder="Enter your password" id="password" required>
+                <br>
+                <input type="submit" name="logIn" id="LogIn" value="Log In"">
+            </div>
         </form>
     </div>
 </body>

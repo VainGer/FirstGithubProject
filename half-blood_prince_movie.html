@@ -5,122 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter and the Half-Blood Prince</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/moviesArticles.css">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
-    <div id="header-container">
-        <header class="grid">
-            <button onclick="openAndCloseItemInNav('nav')" id="burgerbtn"></button>
-            <nav class="overlay" id="nav">
-                <a href="javascript:void(0)" class="closebtn" onclick="openAndCloseItemInNav('nav')">&times;</a>
-                <ul class="overlay-content" id="ul-nav">
-                    <li class="ul-item" id="search-box">
-                        <form action="search">
-                            <input type="text" placeholder="Search" id="search">
-                        </form>
-                    </li>
-                    <li class="mobile-item"><button onclick="openAndCloseItemInNav('movies-menu')" id="moviebtn">
-                            Movies</button></li>
-                    <li class="secondary-overlay" id="movies-menu">
-                        <a href="javascript:void(0)" class="closebtn"
-                            onclick="openAndCloseItemInNav('movies-menu')">&times;</a>
-                        <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-movie')" id="moviebtn">
-                            Movies</button>
-                        <ul class="overlay-content dropdown" id="desktop-movie">
-                            <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a>
-                            </li>
-                            <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of Secrets</a>
-                            </li>
-                            <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban</a>
-                            </li>
-                            <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet of Fire</a></li>
-                            <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the
-                                    Phoenix</a></li>
-                            <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half-Blood Prince</a></li>
-                            <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows: Part
-                                    1</a></li>
-                            <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows: Part
-                                    2</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-item"><button onclick="openAndCloseItemInNav('books-menu')">Books</button></li>
-                    <li class="secondary-overlay" id="books-menu">
-                        <a href="javascript:void(0)" class="closebtn"
-                            onclick="openAndCloseItemInNav('books-menu')">&times;</a>
-                        <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-books')">Books</button>
-                        <ul class="overlay-content dropdown" id="desktop-books">
-                            <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher's Stone</a>
-                            </li>
-                            <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of Secrets</a>
-                            </li>
-                            <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban</a>
-                            </li>
-                            <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet of Fire</a></li>
-                            <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix</a>
-                            </li>
-                            <li><a href="./half-blood_prince_book.html">Harry Potter and the Half-Blood Prince</a></li>
-                            <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows</a></li>
-                        </ul>
-                    </li>
-                    <li class="mobile-item"><button onclick="openAndCloseItemInNav('house-menu')">Houese</button></li>
-                    <li class="secondary-overlay" id="house-menu">
-                        <a href="javascript:void(0)" class="closebtn"
-                            onclick="openAndCloseItemInNav('house-menu')">&times;</a>
-                        <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-house')">Houese</button>
-                        <ul class="overlay-content dropdown" id="desktop-house">
-                            <li><a href="#">Gryffindor</a></li>
-                            <li><a href="#">Hufflepuff</a></li>
-                            <li><a href="#">Ravenclaw</a></li>
-                            <li><a href="#">Slytherin</a></li>
-                        </ul>
-                    </li>
-                    <li><button>Characters</button></li>
-                    <li><button>Gallery</button></li>
-                </ul>
-            </nav>
-            <a href="./index.html" id="logo"></a>
-            <button onclick="openSignup()" id="signUpbtn">SIGN UP</button>
-            <div id="sign-up">
-                <form method="get" action="" id="sign-up-form">
-                    <button id="back" type="reset" onclick="closeSignup()"></button>
-                    <label for="">FIRST NAME <br></label>
-                    <input type="text" name="firstName" id=""><br>
-                    <label for="">LAST NAME <br></label>
-                    <input type="text" name="lastName" id=""><br>
-                    <label for="">DATE OF BIRTH <br></label>
-                    <input type="date" name="birthDate" id=""><br>
-                    <label for="">EMAIL ADRESS <br></label>
-                    <input type="email" name="email" id=""><br>
-                    <label for="">PASSWORD <br></label>
-                    <input type="password" name="password" id=""><br>
-                    <label for="">CHOOSE YOUR HOUSE <br></label>
-                    <select name="House" id="house-select">
-                        <option value="Gryffindor">Gryffindor</option>
-                        <option value="Slytherin">Slytherin</option>
-                        <option value="Ravenclaw">Ravenclaw</option>
-                        <option value="Hufflepuff">Hufflepuff</option>
-                    </select><br>
-                    <input class="submit" type="submit" value="SIGN UP">
-                    <div class="form-border"></div>
-                    <div id="sign-up-with" class="grid">
-                        <a href=""><img src="./assets/icons/google.svg" alt=""><span>Google account</span></a>
-                        <a href=""><img src="./assets/icons/apple.svg" alt=""><span>Apple ID</span></a>
-                    </div>
-                    <div class="form-border"></div>
-                    <span>Already have an account?<br></span>
-                    <form method="get" action="" id="login">
-                        <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com"><br>
-                        <input type="password" name="password" id="" placeholder="PASSWORD"><br>
-                        <button onclick="openLogin()">LOGIN</button>
+    <div id="mobile-header-bg"></div>
+    <header class="grid">
+        <button onclick="openAndCloseItemInNav('nav')" id="burgerbtn"></button>
+        <nav class="overlay" id="nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="openAndCloseItemInNav('nav')">&times;</a>
+            <ul class="overlay-content" id="ul-nav">
+                <li class="ul-item" id="search-li">
+                    <form action="search">
+                        <input type="text" placeholder="Search" id="search">
                     </form>
-                </form>
-            </div>
-        </header>
-    </div>
+                </li>
+                <li class="mobile-item"><button onclick="openAndCloseItemInNav('movies-menu')">Movies</button></li>
+                <li class="secondary-overlay" id="movies-menu">
+                    <a href="javascript:void(0)" class="closebtn"
+                        onclick="openAndCloseItemInNav('movies-menu')">&times;</a>
+                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-movie')" id="moviebtn">
+                        Movies</button>
+                    <ul class="overlay-content dropdown" id="desktop-movie">
+                        <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a>
+                        </li>
+                        <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of Secrets</a>
+                        </li>
+                        <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban</a>
+                        </li>
+                        <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet of Fire</a></li>
+                        <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the
+                                Phoenix</a></li>
+                        <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half-Blood Prince</a></li>
+                        <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows: Part
+                                1</a></li>
+                        <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows: Part
+                                2</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item"><button onclick="openAndCloseItemInNav('books-menu')">Books</button></li>
+                <li class="secondary-overlay" id="books-menu">
+                    <a href="javascript:void(0)" class="closebtn"
+                        onclick="openAndCloseItemInNav('books-menu')">&times;</a>
+                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-books')">Books</button>
+                    <ul class="overlay-content dropdown" id="desktop-books">
+                        <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher's Stone</a>
+                        </li>
+                        <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of Secrets</a>
+                        </li>
+                        <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban</a>
+                        </li>
+                        <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet of Fire</a></li>
+                        <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix</a>
+                        </li>
+                        <li><a href="./half-blood_prince_book.html">Harry Potter and the Half-Blood Prince</a></li>
+                        <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item"><button onclick="openAndCloseItemInNav('house-menu')">Houese</button></li>
+                <li class="secondary-overlay" id="house-menu">
+                    <a href="javascript:void(0)" class="closebtn"
+                        onclick="openAndCloseItemInNav('house-menu')">&times;</a>
+                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-house')">Houese</button>
+                    <ul class="overlay-content dropdown" id="desktop-house">
+                        <li><a href="./gryffindor.html">Gryffindor</a></li>
+                        <li><a href="./hufflepuff.html">Hufflepuff</a></li>
+                        <li><a href="./ravenclaw.html">Ravenclaw</a></li>
+                        <li><a href="./slytherin.html">Slytherin</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item"><button onclick="openAndCloseItemInNav('characters-menu')">Characters</button>
+                </li>
+                <li class="secondary-overlay" id="characters-menu">
+                    <a href="javascript:void(0)" class="closebtn"
+                        onclick="openAndCloseItemInNav('characters-menu')">&times;</a>
+                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-characters')">Characters</button>
+                    <ul class="overlay-content dropdown" id="desktop-characters">
+                        <li><a href="./harry_potter.html">Harry Potter</a></li>
+                        <li><a href="./hermione_granger.html">Hermione Granger</a></li>
+                        <li><a href="./ron_weasley.html">Ron Weasley</a></li>
+                        <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
+                        <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
+                        <li><a href="./luna_lovegood.html">Luna Lovegood</a></li>
+                        <li><a href="./severus_snape.html">Severus Snape</a></li>
+                        <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
+                    </ul>
+                </li>
+                <li><button onclick="window.location.href='./gallery.html'">Gallery</button></li>
+            </ul>
+        </nav>
+        <a href="./index.html" id="logo"></a>
+        <div id="login" class="grid">
+            <button onclick="window.location.href='./register.html'">SIGN UP</button>
+            <button onclick="openAndCloseItemInNav('loginForm')" id="loginbtn">LOG IN</button>
+            <form action="" id="loginForm">
+                <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com"><br>
+                <input type="password" name="password" id="" placeholder="PASSWORD"><br>
+                <input type="submit" name="" id="" value="LOGIN">
+            </form>
+        </div>
+    </header>
     <h2 class="center">Harry Potter and the Half-Blood Prince</h2>
-    <div class="container">
-        <img id="img" src="./assets/images/movies/hp6.jpg" alt="Harry Potter and the Half-Blood Prince">
+    <div class="container grid">
+        <div>
+            <img id="img" src="./assets/images/movies/hp6.jpg" alt="Harry Potter and the Half-Blood Prince">
+            <img id="second-img" src="./assets/images/movies/hp6.jpg" alt="Harry Potter and the Half-Blood Prince">
+        </div>
         <table id="table-style">
 
             <tr class="section-header">

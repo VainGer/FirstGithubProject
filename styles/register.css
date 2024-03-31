@@ -1,0 +1,49 @@
+@import url(./vars.css);
+@import url(./reset.css);
+@import url(./mobile.css);
+@import url(./desktop.css);
+@import url(./tablet.css);
+
+form {
+    padding-top: 5vh;
+}
+
+h1 {
+    padding-top: 10vh;
+}
+
+.border {
+    border: 1px solid var(--primary-ft);
+}
+
+#back {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/icons/back.svg);
+    background-size: 100%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+#form-container {
+    position: fixed;
+    width: 100%;
+}
+
+#signInWith {
+    padding-top: 16px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#signInWith img {
+    width: 120px;
+}
+
+#googleAcc {
+    text-align: end;
+}
+#appleId{
+    text-align: start;
+}
