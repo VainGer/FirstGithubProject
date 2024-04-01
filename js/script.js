@@ -90,5 +90,23 @@ function search() {
 function closeSearch() {
   document.getElementById("search-list").style.display = "none";
 }
-
-
+function saveInput(id) {
+  var input = document.getElementById(id).value;
+  return input;
+}
+function addComment() {
+  var container = document.getElementById("comments");
+  var nameContainer = document.getElementById("names");
+  var input = saveInput("comment");
+  var name = saveInput("name");
+  var newP = document.createElement("p");
+  var newName = document.createElement("p");
+  if (!(input === "") && !(name === "")) {
+    newP.innerHTML = input;
+    newName.innerHTML = name;
+    container.appendChild(newP);
+    nameContainer.appendChild(newName);
+    document.getElementById("comment").value = "";
+    document.getElementById("name").value = "";
+  }
+}

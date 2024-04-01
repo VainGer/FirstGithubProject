@@ -23,7 +23,7 @@
         height: 100%;
     }
 
-     button:hover {
+    button:hover {
         background-color: var(--hover-clr);
         scale: 110%;
     }
@@ -40,9 +40,11 @@
         scale: 105%;
         transition: 0.1s;
     }
-    .dropdown li{
+
+    .dropdown li {
         border: 1px solid var(--primary-ft);
     }
+
     header {
         background-color: var(--headerFooter-bg);
     }
@@ -67,8 +69,10 @@
         order: 3;
     }
 
-    #loginbtn {
-        display: block;
+    @media(min-width: 820px) {
+        #loginbtn {
+            display: block;
+        }
     }
 
     #search-li {
@@ -82,10 +86,12 @@
 
     #loginForm {
         position: fixed;
-        top: 9%;
+        top: 60px;
         right: 0;
-        background-color: var(--main-bg);
+        background-color: var(--headerFooter-bg);
         display: none;
+        height: 120px;
+        border: 1px solid var(--primary-ft);
     }
 
     #loginForn,

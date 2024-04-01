@@ -281,6 +281,20 @@
     The film grossed $795 million worldwide, making it the second highest-grossing film of 2004 (behind Shrek 2) and the
     13th highest-grossing film of all time at the time.
     </p>
+    <div id="commentsSection">
+        <input onkeyup="saveInput('name')" type="text" name="name" id="name" placeholder="Your name"><br>
+        <input onkeyup="saveInput('comment')" type="text" name="comment" id="comment"
+            placeholder="Add your commentary"><br>
+        <button onclick="addComment()">Add comment</button>
+        <div id="output" class="grid">
+            <div id="names">
+                <h2>Name</h2>
+            </div>
+            <div id="comments">
+                <h2>Commentary</h2>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer-img grid">
             <img id="footerLogo" src="./assets/harrypotter_logo.png" alt="">

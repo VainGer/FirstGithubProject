@@ -118,7 +118,22 @@ form {
 padding-left: 4px;
 padding-right: 4px;
 }
-
+#commentsSection{
+    margin-top: 5vh;
+    background-color: var(--hover-clr);
+    border: 1px solid var(--primary-ft);
+}
+#commentsSection button{
+    background-color: var(--main-bg);
+    border-radius: 50%;
+}
+#output{
+    border: 1px solid var(--main-bg);
+    grid-template-columns: 1fr 3fr;
+}
+#names h2, #comments h2,#names p, #comments p{
+    border: 1px solid var(--primary-ft);
+}
 @media (max-width :767px) {
     #search-list {
         display: none;
@@ -132,7 +147,7 @@ padding-right: 4px;
     #closeSearch {
         display: none;
         position: fixed;
-        top: 23%;
+        top: 24%;
         right: 30%;
         font-size: 40px;
         z-index: 1;
