@@ -28,6 +28,7 @@ td {
 }
 
 img {
+    padding-top: 5vh;
     display: block;
     margin: 20px auto;
     max-width: 100%;
@@ -47,13 +48,15 @@ blockquote {
     font-style: italic;
     text-align: center;
 }
-
+#table-style{
+    margin-top: 40px;
+}
 @media(min-width: 768px) {
     .container {
         grid-template-columns: 1fr 1fr;
     }
-    #second-img{
-        padding-top: 10vw;
+    .second-img{
+        padding-top: 10vh;
     }
 }
 
@@ -61,7 +64,7 @@ blockquote {
     #article {
         order: 3;
     }
-    #second-img {
+    .second-img {
         display: none;
     }
 }

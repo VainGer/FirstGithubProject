@@ -13,6 +13,7 @@
 
     button {
         border-radius: 30%;
+        transition: 0.1s;
     }
 
     .desktopbtn {
@@ -22,9 +23,9 @@
         height: 100%;
     }
 
-    .desktopbtn:hover,
-    .btn:hover {
+     button:hover {
         background-color: var(--hover-clr);
+        scale: 110%;
     }
 
     .dropdown {
@@ -36,8 +37,12 @@
 
     .dropdown li:hover {
         background-color: var(--hover-clr);
+        scale: 105%;
+        transition: 0.1s;
     }
-
+    .dropdown li{
+        border: 1px solid var(--primary-ft);
+    }
     header {
         background-color: var(--headerFooter-bg);
     }
