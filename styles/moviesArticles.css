@@ -58,6 +58,9 @@ blockquote {
     .second-img{
         padding-top: 10vh;
     }
+    img{
+        width: 504px;
+    }
 }
 
 @media(max-width:768px) {
