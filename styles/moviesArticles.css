@@ -31,6 +31,7 @@ img {
     display: block;
     margin: 20px auto;
     max-width: 100%;
+    padding-inline: 8px;
 }
 
 .section-header {
@@ -51,9 +52,8 @@ blockquote {
     .container {
         grid-template-columns: 1fr 1fr;
     }
-
-    #article {
-        display: none;
+    #second-img{
+        padding-top: 10vw;
     }
 }
 
@@ -61,11 +61,6 @@ blockquote {
     #article {
         order: 3;
     }
-
-    #article-for-wider {
-        display: none;
-    }
-
     #second-img {
         display: none;
     }

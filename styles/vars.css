@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Open Sans;
+    src: url(../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    ;
+}
+@font-face {
+    font-family: Open Sans Italic;
+    src: url(../assets/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    ;
+}
 :root {
     /*colors*/
     --main-bg: rgba(16, 51, 83);
@@ -6,4 +16,7 @@
     --hover-clr: rgb(70, 86, 90);
     /* font colors */
     --primary-ft: rgb(255, 255, 255);
+    /* fonts */
+    --primary: Open Sans;
+    --italic: Open Sans Italic;
 }

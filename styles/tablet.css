@@ -1,3 +1,8 @@
+@import url(./vars.css);
+@import url(./reset.css);
+@import url(./mobile.css);
+@import url(./desktop.css);
+@import url(./tablet.css);
 @media (min-width: 425px) and (max-width: 767px) {
     #logo {
         margin-left: calc(25% + 6vw);

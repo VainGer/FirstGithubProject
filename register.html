@@ -15,18 +15,18 @@
     <h1>Sign Up</h1>
     <button id="back" onclick="history.back()"></button>
     <div id="form-container">
-        <form action="">
+        <form action="./my_page.html">
             <label for="name"><b>Name</b></label>
             <br>
-            <input type="text" placeholder="Your Name" id="name">
+            <input type="text" placeholder="Your Name" id="name" required>
             <br>
             <label for="email"><b>Email</b></label>
             <br>
-            <input type="text" placeholder="Your Email" name="email" id="email">
+            <input type="text" placeholder="Your Email" name="email" id="email" required>
             <br>
             <label for="password"><b>Password</b></label>
             <br>
-            <input type="password" name="password" placeholder="Enter your password" id="password">
+            <input type="password" name="password" placeholder="Enter your password" id="password" required>
             <br>
             <select name="House" id="house">
                 <option selected disabled>Choose Your House</option>
@@ -37,42 +37,36 @@
             </select>
             <br>
             <input type="submit" name="signUp" id="signUp" value="Sign Up">
-            <br>
-            <div class="border"></div>
-            <span>Sign Up With</span>
-            <div id="signInWith-container"></div>
-            <div id="signUpWith" class="grid">
-                <div class="blank"></div>
-                <div id="googleAcc">
-                    <button onclick="window.location.href='./index.html'"><img src="./assets/icons/google.svg"
-                            alt="google"></button>
-                    <br>
-                    <span>Google Accaunt</span>
-                </div>
-                <div id="appleId">
-                    <button onclick="window.location.href='./index.html'"><img src="./assets/icons/apple.svg"
-                            alt="apple"></button>
-                    <br>
-                    <span>Apple ID</span>
-                </div>
-                <div class="blank"></div>
-            </div>
-            <div class="border"></div>
-            <span>Alreay have an accont?</span>
-            <div id="alreadyHaveAcc">
-                <form action="login">
-                    <label for="email"><b>Email</b></label>
-                    <br>
-                    <input type="text" placeholder="Your Email" name="email" id="email">
-                    <br>
-                    <label for="password"><b>Password</b></label>
-                    <br>
-                    <input type="password" name="password" placeholder="Enter your password" id="password">
-                    <br>
-                    <input type="submit" name="logIn" id="LogIn" value="Log In"">
-            </form>
-            </div>
         </form>
+        <div class="border"></div>
+        <span>Sign Up With</span>
+        <div id="signUpWith" class="grid">
+            <div class="blank"></div>
+            <div id="googleAcc">
+                <a href="my_page.html"><img src="./assets/icons/google.svg" alt=""></a>
+                <br>
+                <span>Google Accaunt</span>
+            </div>
+            <div id="appleId">
+                <a href="./my_page.html"><img src="./assets/icons/apple.svg" alt=""></a>
+                <br>
+                <span>Apple ID</span>
+            </div>
+            <div class="blank"></div>
+        </div>
+        <div class="border"></div>
+        <span>Alreay have an accont?</span>
+            <form action="./my_page.html" id="alreadyHaveAcc">
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="text" placeholder="Your Email" name="email" id="email" required>
+                <br>
+                <label for="password"><b>Password</b></label>
+                <br>
+                <input type="password" name="password" placeholder="Enter your password" id="password" required>
+                <br>
+                <input type="submit" name="logIn" id="LogIn" value="Log In"">
+            </form>
     </div>
 </body>
 

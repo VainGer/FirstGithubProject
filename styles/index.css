@@ -6,23 +6,24 @@
 
 #hero {
   height: 80vh;
-  background-image: url(../assets/images/hero.jpeg);
+  background-image: url(../assets/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 #space {
-  height: 50vh;
+  height: 40vh;
 }
 
 #main {
   text-align: center;
-
+  background-color: rgba(16, 51, 83, 0.774);
+  margin-inline: 8px;
 }
 
 #main article {
   padding-inline: 12px;
-  background-color: rgba(73, 93, 110, 0.356);
+  font-family: var(--italic);
 }
 
 .secondary-button {
@@ -102,7 +103,7 @@
 
   #hero {
     background-size: cover;
-    background-position: 50% 5%;
+    background-position: 34% 0;
   }
 
   .secondaryh2 {
@@ -162,6 +163,8 @@
     width: 50%;
     margin-left: 25%;
   }
-
+  #space{
+    height: 50vh;
+  }
 
 }

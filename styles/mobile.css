@@ -1,13 +1,22 @@
+@import url(./vars.css);
+@import url(./reset.css);
+@import url(./mobile.css);
+@import url(./desktop.css);
+@import url(./tablet.css);
+
 .grid {
     display: grid;
 }
-
+*{
+    font-family: var(--primary);
+    font-size: calc(1em + 0.03vw);
+}
 body {
     color: var(--primary-ft);
     background-color: var(--main-bg);
     text-align: center;
 }
-#loginbtn{
+#loginbtn {
     display: none;
 }
 footer {
@@ -20,18 +29,22 @@ footer {
     padding-top: 24px;
     padding-left: 25%;
 }
-#social a,#social img{
+
+#social a,
+#social img {
     margin: 0;
     height: 30px;
     width: 30px;
 }
+
 button {
     background-color: transparent;
     border: none;
     color: var(--primary-ft);
     height: 60px;
 }
-#mobile-header-bg{
+
+#mobile-header-bg {
     height: 60px;
     width: 100%;
     background-color: var(--headerFooter-bg);
@@ -68,21 +81,41 @@ header {
 
 }
 
-
-#mobile-search {
-    background-color: rgb(255, 255, 255);
-}
-.desktopbtn{
+.desktopbtn {
     display: none;
 }
 
 @media (max-width :767px) {
+    #search-list {
+        display: none;
+        position: fixed;
+        background-color: var(--headerFooter-bg);
+        width: 100%;
+        height: 100%;
+    }
+
+    #closeSearch {
+        display: none;
+        position: fixed;
+        top: 23%;
+        right: 30%;
+        font-size: 40px;
+        z-index: 1;
+        color: black;
+    }
+
     #logo {
         margin-left: 20%;
     }
-    #loginForm{
+
+    #search {
+        width: 40%;
+    }
+
+    #loginForm {
         display: none;
     }
+
     .overlay {
         height: 100%;
         width: 0;
@@ -96,6 +129,7 @@ header {
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-color: var(--headerFooter-bg);
+        font-size: 0.93em;
     }
 
     .secondary-overlay {
@@ -110,6 +144,7 @@ header {
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-color: var(--headerFooter-bg);
+        font-size: 0.93em;
     }
 
     .overlay-content {
@@ -128,10 +163,10 @@ header {
     }
 
     .overlay li {
-        padding-bottom: 15px;
+        padding-bottom: 25px;
     }
-    button{
+
+    button {
         height: 100%;
     }
 }
-

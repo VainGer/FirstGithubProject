@@ -17,9 +17,59 @@
             <a href="javascript:void(0)" class="closebtn" onclick="openAndCloseItemInNav('nav')">&times;</a>
             <ul class="overlay-content" id="ul-nav">
                 <li class="ul-item" id="search-li">
-                    <form action="search">
-                        <input type="text" placeholder="Search" id="search">
-                    </form>
+                    <input type="text" id="search" placeholder="Search" onkeyup="search()">
+                    <a href="javascript:void(0)" class="mobile-item" id="closeSearch"
+                        onclick="cloesSearch()">&times;</a>
+                    <div class="overlay-content">
+                        <ul id="search-list" class="dropdown">
+                            <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher Stone
+                                    movie</a>
+                            </li>
+                            <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of secrets
+                                    movie</a>
+                            </li>
+                            <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban
+                                    movie</a></li>
+                            <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet Of Fire movie</a></li>
+                            <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the Phoenix
+                                    movie</a></li>
+                            <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half Blood Prince
+                                    movie</a>
+                            </li>
+                            <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows Part 1
+                                    movie</a></li>
+                            <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows Part 2
+                                    movie</a></li>
+                            <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher Stone
+                                    book</a>
+                            </li>
+                            <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of secrets
+                                    book</a>
+                            </li>
+                            <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban
+                                    book</a></li>
+                            <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet Of Fire movie</a></li>
+                            <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix
+                                    book</a></li>
+                            <li><a href="./half-blood_prince_book.html">Harry Potter and the Half Blood Prince
+                                    book</a>
+                            </li>
+                            <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows Part 1
+                                    book</a></li>
+                            <li><a href="./harry_potter.html">Harry Potter</a></li>
+                            <li><a href="./hermione_granger.html">Hermione Granger</a></li>
+                            <li><a href="./ron_weasley.html">Ron Weasley</a></li>
+                            <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
+                            <li><a href="./luna_lovegood.html">Luna Lovegood</a></li>
+                            <li><a href="./severus_snape.html">Severus Snape</a></li>
+                            <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
+                            <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
+                            <li><a href="./gryffindor.html">Gryffindor</a></li>
+                            <li><a href="./hufflepuff.html">Hufflepuff</a></li>
+                            <li><a href="./slytherin.html">Slytherin</a></li>
+                            <li><a href="./ravenclaw.html">Ravenclaw</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="mobile-item"><button onclick="openAndCloseItemInNav('movies-menu')">Movies</button></li>
                 <li class="secondary-overlay" id="movies-menu">
@@ -99,9 +149,9 @@
         <div id="login" class="grid">
             <button onclick="window.location.href='./register.html'">SIGN UP</button>
             <button onclick="openAndCloseItemInNav('loginForm')" id="loginbtn">LOG IN</button>
-            <form action="" id="loginForm">
-                <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com"><br>
-                <input type="password" name="password" id="" placeholder="PASSWORD"><br>
+            <form action="./my_page.html" id="loginForm">
+                <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com" required><br>
+                <input type="password" name="password" id="" placeholder="PASSWORD" required><br>
                 <input type="submit" name="" id="" value="LOGIN">
             </form>
         </div>
@@ -109,67 +159,10 @@
     <h2 class="center">Harry Potter and the Philosopher's Stone</h2>
     <div class="container grid">
         <div>
-            <div>
-                <img id="img" src="./assets/images/movies/hp1.jpg" alt="Harry Potter and the Philosopher's Stone">
-                <img id="second-img" src="./assets/images/movies/hp1.jpg" alt="Harry Potter and the Philosopher's Stone">
-            </div>
-            <blockquote>"Journey beyond your imagination."
-                — Official tagline</blockquote>
-            <p id="article-for-wider">
-                Harry Potter and the Philosopher's Stone is a British-American fantasy film based on the first novel
-                by J.
-                K.
-                Rowling, released on 16 November 2001. It is directed by Chris Columbus, written by Steve Kloves,
-                and
-                produced
-                by
-                David Heyman. The film stars Daniel Radcliffe, Rupert Grint, Emma Watson, John Cleese, Robbie
-                Coltrane,
-                Richard
-                Griffiths, Richard Harris, Ian Hart, John Hurt, Alan Rickman, Fiona Shaw, Maggie Smith, Sean
-                Biggerstaff,
-                Warwick
-                Davis, Julie Walters, Zoë Wanamaker, David Bradley, and Tom Felton.
-
-                For the American, Indian, and Philippine release, just as was done with the book, the film was given
-                the
-                alternate
-                title Harry Potter and the Sorcerer's Stone.
-
-                The film grossed $974 million worldwide in its initial release, making it the highest-grossing film
-                of 2001
-                and
-                the
-                second highest-grossing film of all time at the time (behind Titanic).
-            </p>
+            <img id="img-mobile" src="./assets/images/movies/hp1.jpg" alt="Harry Potter and the Philosopher's Stone">
+            <img id="second-img" src="./assets/images/movies/philosopher stone scene.jpg"
+                alt="Harry Potter and the Philosopher's Stone">
         </div>
-        <p id="article">
-            Harry Potter and the Philosopher's Stone is a British-American fantasy film based on the first novel
-            by J.
-            K.
-            Rowling, released on 16 November 2001. It is directed by Chris Columbus, written by Steve Kloves,
-            and
-            produced
-            by
-            David Heyman. The film stars Daniel Radcliffe, Rupert Grint, Emma Watson, John Cleese, Robbie
-            Coltrane,
-            Richard
-            Griffiths, Richard Harris, Ian Hart, John Hurt, Alan Rickman, Fiona Shaw, Maggie Smith, Sean
-            Biggerstaff,
-            Warwick
-            Davis, Julie Walters, Zoë Wanamaker, David Bradley, and Tom Felton.
-
-            For the American, Indian, and Philippine release, just as was done with the book, the film was given
-            the
-            alternate
-            title Harry Potter and the Sorcerer's Stone.
-
-            The film grossed $974 million worldwide in its initial release, making it the highest-grossing film
-            of 2001
-            and
-            the
-            second highest-grossing film of all time at the time (behind Titanic).
-        </p>
         <table id="table-style">
             <tr class="section-header">
                 <td colspan="2">Film information</td>
@@ -253,11 +246,40 @@
                 <td>$974 million</td>
             <tr>
                 <th>Followed by</th>
-                <td><a href="http://127.0.0.1:5500/chamber_of_secrets_movie.html">Harry Potter and the Chamber of
+                <td><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of
                         Secrets</a></td>
             </tr>
         </table>
     </div>
+    <p>
+    <blockquote>"Journey beyond your imagination."
+        — Official tagline</blockquote>
+    Harry Potter and the Philosopher's Stone is a British-American fantasy film based on the first novel
+    by J.
+    K.
+    Rowling, released on 16 November 2001. It is directed by Chris Columbus, written by Steve Kloves,
+    and
+    produced
+    by
+    David Heyman. The film stars Daniel Radcliffe, Rupert Grint, Emma Watson, John Cleese, Robbie
+    Coltrane,
+    Richard
+    Griffiths, Richard Harris, Ian Hart, John Hurt, Alan Rickman, Fiona Shaw, Maggie Smith, Sean
+    Biggerstaff,
+    Warwick
+    Davis, Julie Walters, Zoë Wanamaker, David Bradley, and Tom Felton.
+
+    For the American, Indian, and Philippine release, just as was done with the book, the film was given
+    the
+    alternate
+    title Harry Potter and the Sorcerer's Stone.
+
+    The film grossed $974 million worldwide in its initial release, making it the highest-grossing film
+    of 2001
+    and
+    the
+    second highest-grossing film of all time at the time (behind Titanic).
+    </p>
 </body>
 
 </html>

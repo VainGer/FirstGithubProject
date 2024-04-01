@@ -1,0 +1,42 @@
+@import url(./vars.css);
+@import url(./reset.css);
+@import url(./mobile.css);
+@import url(./desktop.css);
+@import url(./tablet.css);
+
+body {
+    text-align: center;
+}
+
+#table,
+#table tr,
+#table td,
+#table th {
+    margin-inline: auto;
+    border-collapse: collapse;
+    border: 1px solid var(--primary-ft);
+}
+
+table {
+    margin-top: 4%;
+}
+
+td,
+th {
+    width: 30%;
+}
+
+#login {
+    padding-top: 20px;
+}
+
+#avatar img {
+    border-radius: 45%;
+}
+
+#avatar {
+    background-color: var(--headerFooter-bg);
+    width: max-content;
+    margin-inline: auto;
+    margin-bottom: 5%;
+}
