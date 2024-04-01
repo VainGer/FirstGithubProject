@@ -95,13 +95,30 @@ header {
 .footer {
     border-top-style: solid;
     border-top-color: #60a8e7;
+    
 }
 
 .newsletter-signup button {
     background: #007bff;
     cursor: pointer;
     border-radius: 5px;
+    
 }
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    padding-bottom: 50px;
+    gap: 15px;
+    font-size: 18px;  
+}
+.profile-img
+{
+padding-left: 4px;
+padding-right: 4px;
+}
+
 @media (max-width :767px) {
     #search-list {
         display: none;
@@ -186,5 +203,6 @@ header {
     button {
         height: 100%;
     }
+    
 
 }

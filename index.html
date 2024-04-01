@@ -114,11 +114,11 @@
                         <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows</a></li>
                     </ul>
                 </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('house-menu')">Houese</button></li>
+                <li class="mobile-item"><button onclick="openAndCloseItemInNav('house-menu')">Houses</button></li>
                 <li class="secondary-overlay" id="house-menu">
                     <a href="javascript:void(0)" class="closebtn"
                         onclick="openAndCloseItemInNav('house-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-house')">Houese</button>
+                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-house')">Houses</button>
                     <ul class="overlay-content dropdown" id="desktop-house">
                         <li><a href="./gryffindor.html">Gryffindor</a></li>
                         <li><a href="./hufflepuff.html">Hufflepuff</a></li>
@@ -255,17 +255,15 @@
                 alt="">Slytherin</a>
     </section>
     <footer class="footer">
-        <div></div>
-        <div class="social-icons footer-img">           
+        <div class="footer-img grid">
+            <img id="footerLogo" src="./assets/harrypotter_logo.png" alt="">
             <img src="./assets/icons/facebook white.svg" alt="">
             <img src="./assets/icons/insta white.svg" alt="">
             <img src="./assets/icons/twitter white.svg" alt="">
-            <img src="./assets/harrypotter_logo.png" alt="">
         </div>
         <div id="about">
-            <span><a href="">Info</a></span>
-            <span><a href="">About</a></span>
-            <span><a href="">Contact</a></span>
+            <span><a href="./about.html">About</a></span>
+            <span><a href="./contact.html">Contact</a></span>
         </div>
         <div class="newsletter-signup">
             <h3>Sign up for updates on all our latest articles</h3>
@@ -274,7 +272,9 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-        <div class="copyrights"><p >**All rights reserved to German Weinblatt and Raz Atir**</p></div>
+        <div class="copyrights">
+            <p>**All rights reserved to German Weinblatt and Raz Atir**</p>
+        </div>
 
     </footer>
 </body>
