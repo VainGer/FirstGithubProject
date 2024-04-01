@@ -81,7 +81,7 @@ function search() {
       li[i].style.display = "none";
     }
   }
-  addEventListener("change", function () {
+  addEventListener("click", function () {
     closeSearch();
     document.getElementById("closeSearch").style.display = "none";
     document.getElementById("search").value = "";
