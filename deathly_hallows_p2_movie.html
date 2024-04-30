@@ -8,155 +8,12 @@
     </title>
     <link rel="stylesheet" href="./styles/moviesArticles.css">
     <script src="./js/script.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
 </head>
 
 <body>
-    <div id="mobile-header-bg"></div>
-    <header class="grid">
-        <button onclick="openAndCloseItemInNav('nav')" id="burgerbtn"></button>
-        <nav class="overlay" id="nav">
-            <a href="javascript:void(0)" class="closebtn" onclick="openAndCloseItemInNav('nav')">&times;</a>
-            <ul class="overlay-content" id="ul-nav">
-                <li class="ul-item" id="search-li">
-                    <input type="text" id="search" placeholder="Search" onkeyup="search()">
-                    <a href="javascript:void(0)" class="mobile-item" id="closeSearch"
-                        onclick="cloesSearch()">&times;</a>
-                    <div class="overlay-content">
-                        <ul id="search-list" class="dropdown">
-                            <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher Stone
-                                    movie</a>
-                            </li>
-                            <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of secrets
-                                    movie</a>
-                            </li>
-                            <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban
-                                    movie</a></li>
-                            <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet Of Fire movie</a></li>
-                            <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the Phoenix
-                                    movie</a></li>
-                            <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half Blood Prince
-                                    movie</a>
-                            </li>
-                            <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows Part 1
-                                    movie</a></li>
-                            <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows Part 2
-                                    movie</a></li>
-                            <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher Stone
-                                    book</a>
-                            </li>
-                            <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of secrets
-                                    book</a>
-                            </li>
-                            <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban
-                                    book</a></li>
-                            <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet Of Fire movie</a></li>
-                            <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix
-                                    book</a></li>
-                            <li><a href="./half-blood_prince_book.html">Harry Potter and the Half Blood Prince
-                                    book</a>
-                            </li>
-                            <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows Part 1
-                                    book</a></li>
-                            <li><a href="./harry_potter.html">Harry Potter</a></li>
-                            <li><a href="./hermione_granger.html">Hermione Granger</a></li>
-                            <li><a href="./ron_weasley.html">Ron Weasley</a></li>
-                            <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
-                            <li><a href="./luna_lovegood.html">Luna Lovegood</a></li>
-                            <li><a href="./severus_snape.html">Severus Snape</a></li>
-                            <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
-                            <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
-                            <li><a href="./gryffindor.html">Gryffindor</a></li>
-                            <li><a href="./hufflepuff.html">Hufflepuff</a></li>
-                            <li><a href="./slytherin.html">Slytherin</a></li>
-                            <li><a href="./ravenclaw.html">Ravenclaw</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('movies-menu')">Movies</button></li>
-                <li class="secondary-overlay" id="movies-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('movies-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-movie')" id="moviebtn">
-                        Movies</button>
-                    <ul class="overlay-content dropdown" id="desktop-movie">
-                        <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a>
-                        </li>
-                        <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of Secrets</a>
-                        </li>
-                        <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban</a>
-                        </li>
-                        <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet of Fire</a></li>
-                        <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the
-                                Phoenix</a></li>
-                        <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half-Blood Prince</a></li>
-                        <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows: Part
-                                1</a></li>
-                        <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows: Part
-                                2</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('books-menu')">Books</button></li>
-                <li class="secondary-overlay" id="books-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('books-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-books')">Books</button>
-                    <ul class="overlay-content dropdown" id="desktop-books">
-                        <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher's Stone</a>
-                        </li>
-                        <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of Secrets</a>
-                        </li>
-                        <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban</a>
-                        </li>
-                        <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet of Fire</a></li>
-                        <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix</a>
-                        </li>
-                        <li><a href="./half-blood_prince_book.html">Harry Potter and the Half-Blood Prince</a></li>
-                        <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('house-menu')">Houese</button></li>
-                <li class="secondary-overlay" id="house-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('house-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-house')">Houese</button>
-                    <ul class="overlay-content dropdown" id="desktop-house">
-                        <li><a href="./gryffindor.html">Gryffindor</a></li>
-                        <li><a href="./hufflepuff.html">Hufflepuff</a></li>
-                        <li><a href="./ravenclaw.html">Ravenclaw</a></li>
-                        <li><a href="./slytherin.html">Slytherin</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('characters-menu')">Characters</button>
-                </li>
-                <li class="secondary-overlay" id="characters-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('characters-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-characters')">Characters</button>
-                    <ul class="overlay-content dropdown" id="desktop-characters">
-                        <li><a href="./harry_potter.html">Harry Potter</a></li>
-                        <li><a href="./hermione_granger.html">Hermione Granger</a></li>
-                        <li><a href="./ron_weasley.html">Ron Weasley</a></li>
-                        <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
-                        <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
-                        <li><a href="./luna_lovegood.html">Luna Lovegood</a></li>
-                        <li><a href="./severus_snape.html">Severus Snape</a></li>
-                        <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
-                    </ul>
-                </li>
-                <li><button onclick="window.location.href='./gallery.html'">Gallery</button></li>
-            </ul>
-        </nav>
-        <a href="./index.html" id="logo"></a>
-        <div id="login" class="grid">
-            <button onclick="window.location.href='./register.html'">SIGN UP</button>
-            <button onclick="openAndCloseItemInNav('loginForm')" id="loginbtn">LOG IN</button>
-            <form action="./my_page.html" id="loginForm">
-                <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com" required><br>
-                <input type="password" name="password" id="" placeholder="PASSWORD" required><br>
-                <input type="submit" name="" id="" value="LOGIN">
-            </form>
-        </div>
-    </header>
+    <header-js></header-js>
     <h2 class="center">Harry Potter and the Deathly Hallows: Part 2
     </h2>
     <div class="container grid">
@@ -167,7 +24,7 @@
         ">
             <img class="second-img" src="./assets/images/movies/dh 2 scene2.jpg" alt="Harry Potter and the Deathly Hallows: Part 2
         ">
-        <img class="second-img" src="./assets/images/movies/dh 2 scene 3.jpg" alt="Harry Potter and the Deathly Hallows: Part 2
+            <img class="second-img" src="./assets/images/movies/dh 2 scene 3.jpg" alt="Harry Potter and the Deathly Hallows: Part 2
         ">
         </div>
         <table id="table-style">
@@ -276,66 +133,102 @@
             </tr>
         </table>
     </div>
-
-    <p>
     <blockquote>"It All Ends 7.15"
         — Official tagline</blockquote>
-    Harry Potter and the Deathly Hallows: Part 2 is the second instalment of a two-part film based on Harry Potter and
-    the Deathly Hallows by J. K. Rowling, and the final film in the Harry Potter series.
-
-    David Yates, who directed the preceding two films, directed both parts, while Steve Kloves returned to script.[3]
-    The first part was released internationally on 18 November 2010 and the following day in the United Kingdom and the
-    United States, with the second released on 13 July 2011.[4] Production of the two films occurred concurrently,[5]
-    and treated as if it were one film.[6] The idea to split the films had been around since the middle of 2007,[3] but
-    only really came into serious consideration after producer David Heyman was able to talk to writer Steve Kloves when
-    the 2007-2008 Writers Guild of America strike ended and Heyman had Rowling's approval.[6]
-
-    On 12 March 2008, Warner Bros. additionally confirmed that the film would be split into two, to do justice to the
-    book.[7] David Yates, director of Order of the Phoenix and Half-Blood Prince will return to direct and Steve Kloves
-    is going to write the screenplay. According to Warner Bros. executive Alan F. Horn, it will allow "an extra hour and
-    a half to celebrate what this franchise has been and do justice to all the words and ideas in the amazing story."
-    Heyman described the workings behind the split: "Deathly Hallows is so rich, the story so dense and there is so much
-    that is resolved that, after discussing it with Rowling, we came to the conclusion that two parts were needed."[5]
-    Kloves was not able to start work on the script until the WGA strike ended.[8]
-
-    Before David Yates was officially chosen to direct the film, others had expressed an interest in the job. Alfonso
-    Cuarón, director of Harry Potter and the Prisoner of Azkaban, had said that he would be "tempted" to return to
-    direct.[9] Guillermo del Toro, who passed on Prisoner of Azkaban, had expressed interest in directing Deathly
-    Hallows,[10] but an increased workload ruled him out of the project.[11]
-
-    Heyman noted that the films will be a closer recreation of the books than the previous films because of the length a
-    two-part adaptation entails. Daniel Radcliffe said: "This is a road film, particularly in Part One of the film.
-    People have been so used to seeing Harry Potter at Hogwarts and we're just not there for the first part of the film.
-    That seems to have really freshened things up, and hopefully will get people seeing the films with fresh eyes again,
-    because it's just a totally different look when you're not just sat in the same room the whole time."[12]
-
-    Although Yates had retained composer Nicholas Hooper for Half-Blood Prince, John Williams (who composed the scores
-    to the first three films) had expressed interest in returning to score the film - however he did not state which
-    part he would be contributing to. In January 2010 Alexandre Desplat, a French composer, was confirmed to produce the
-    score for Harry Potter and the Deathly Hallows: Part 1.[13] In November 2010 it was confirmed that Alexandre Desplat
-    (despite many fans wanting Williams) would compose the second part. Yates and Heyman have noted that some of the
-    events of this film had an effect on the way the sixth film was written.[14]
-
-    The first part of Deathly Hallows ends as Voldemort retrieves the Elder Wand from Albus Dumbledore's tomb.[15] This
-    film starts with the trio planning the Gringotts Break-in.
-
-    In the wake of the success of the 3-D film Avatar in late 2009, Warner Bros. announced that the Deathly Hallows
-    films will be converted to 3-D for showing in 3-D.[16] However, the first film was not released in 3-D due to time
-    constraints. The second film is nonetheless being widely released in traditional 2-D as well for ticket-buyers who
-    prefer that viewing option.
-
-    Deathly Hallows: Part 2 opened to critical acclaim along with instant commercial success: on the film review
-    aggregator Rotten Tomatoes, the film has an overall approval rating of 96%. The film set many new box office
-    records, including biggest opening day in the United States ($91,071,119), in the United Kingdom ($14.8 million) and
-    in 13 other countries,[17] biggest US and worldwide opening weekend ($169,189,427; $483,189,427) and biggest US
-    midnight release ($43,500,000).[18][19]
-
-    Deathly Hallows: Part 2 is the highest-grossing film of 2011, the 9th film in history to have grossed over $1
-    billion (after Titanic, The Lord of the Rings: The Return of the King, Pirates of the Caribbean: Dead Man's Chest,
-    The Dark Knight, Avatar, Alice in Wonderland, Toy Story 3 and Pirates of the Caribbean: On Stranger Tides), and
-    grossed $1.341 billion worldwide, which made it the third highest-grossing film of all time at the time of its
-    release (behind Avatar and Titanic). It is currently the 13th highest-grossing film of all time.[20]
-    </p>
+    <div id="article" class="grid">
+        <p>
+            Harry Potter and the Deathly Hallows: Part 2 is the second instalment of a two-part film based on Harry
+            Potter and
+            the Deathly Hallows by J. K. Rowling, and the final film in the Harry Potter series.
+            <br>
+            David Yates, who directed the preceding two films, directed both parts, while Steve Kloves returned to
+            script.[3]
+            The first part was released internationally on 18 November 2010 and the following day in the United Kingdom
+            and the
+            United States, with the second released on 13 July 2011.[4] Production of the two films occurred
+            concurrently,[5]
+            and treated as if it were one film.[6] The idea to split the films had been around since the middle of
+            2007,[3] but
+            only really came into serious consideration after producer David Heyman was able to talk to writer Steve
+            Kloves when
+            the 2007-2008 Writers Guild of America strike ended and Heyman had Rowling's approval.[6]
+            <br>
+            On 12 March 2008, Warner Bros. additionally confirmed that the film would be split into two, to do justice
+            to the
+            book.[7] David Yates, director of Order of the Phoenix and Half-Blood Prince will return to direct and Steve
+            Kloves
+            is going to write the screenplay. According to Warner Bros. executive Alan F. Horn, it will allow "an extra
+            hour and
+            a half to celebrate what this franchise has been and do justice to all the words and ideas in the amazing
+            story."
+            Heyman described the workings behind the split: "Deathly Hallows is so rich, the story so dense and there is
+            so much
+            that is resolved that, after discussing it with Rowling, we came to the conclusion that two parts were
+            needed."[5]
+            Kloves was not able to start work on the script until the WGA strike ended.[8]
+            <br>
+            Before David Yates was officially chosen to direct the film, others had expressed an interest in the job.
+            Alfonso
+            Cuarón, director of Harry Potter and the Prisoner of Azkaban, had said that he would be "tempted" to return
+            to
+            direct.[9] Guillermo del Toro, who passed on Prisoner of Azkaban, had expressed interest in directing
+            Deathly
+            Hallows,[10] but an increased workload ruled him out of the project.[11]
+            <br>
+            Heyman noted that the films will be a closer recreation of the books than the previous films because of the
+            length a
+            two-part adaptation entails. Daniel Radcliffe said: "This is a road film, particularly in Part One of the
+            film.
+            People have been so used to seeing Harry Potter at Hogwarts and we're just not there for the first part of
+            the film.
+            That seems to have really freshened things up, and hopefully will get people seeing the films with fresh
+            eyes again,
+            because it's just a totally different look when you're not just sat in the same room the whole time."[12]
+        </p>
+        <p>
+            Although Yates had retained composer Nicholas Hooper for Half-Blood Prince, John Williams (who composed the
+            scores
+            to the first three films) had expressed interest in returning to score the film - however he did not state
+            which
+            part he would be contributing to. In January 2010 Alexandre Desplat, a French composer, was confirmed to
+            produce the
+            score for Harry Potter and the Deathly Hallows: Part 1.[13] In November 2010 it was confirmed that Alexandre
+            Desplat
+            (despite many fans wanting Williams) would compose the second part. Yates and Heyman have noted that some of
+            the
+            events of this film had an effect on the way the sixth film was written.[14]
+            <br>
+            The first part of Deathly Hallows ends as Voldemort retrieves the Elder Wand from Albus Dumbledore's
+            tomb.[15] This
+            film starts with the trio planning the Gringotts Break-in.
+            <br>
+            In the wake of the success of the 3-D film Avatar in late 2009, Warner Bros. announced that the Deathly
+            Hallows
+            films will be converted to 3-D for showing in 3-D.[16] However, the first film was not released in 3-D due
+            to time
+            constraints. The second film is nonetheless being widely released in traditional 2-D as well for
+            ticket-buyers who
+            prefer that viewing option.
+            <br>
+            Deathly Hallows: Part 2 opened to critical acclaim along with instant commercial success: on the film review
+            aggregator Rotten Tomatoes, the film has an overall approval rating of 96%. The film set many new box office
+            records, including biggest opening day in the United States ($91,071,119), in the United Kingdom ($14.8
+            million) and
+            in 13 other countries,[17] biggest US and worldwide opening weekend ($169,189,427; $483,189,427) and biggest
+            US
+            midnight release ($43,500,000).[18][19]
+            <br>
+            Deathly Hallows: Part 2 is the highest-grossing film of 2011, the 9th film in history to have grossed over
+            $1
+            billion (after Titanic, The Lord of the Rings: The Return of the King, Pirates of the Caribbean: Dead Man's
+            Chest,
+            The Dark Knight, Avatar, Alice in Wonderland, Toy Story 3 and Pirates of the Caribbean: On Stranger Tides),
+            and
+            grossed $1.341 billion worldwide, which made it the third highest-grossing film of all time at the time of
+            its
+            release (behind Avatar and Titanic). It is currently the 13th highest-grossing film of all time.[20]
+        </p>
+    </div>
     <div id="commentsSection">
         <input onkeyup="saveInput('name')" type="text" name="name" id="name" placeholder="Your name"><br>
         <input onkeyup="saveInput('comment')" type="text" name="comment" id="comment"
@@ -350,28 +243,7 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-img grid">
-            <img id="footerLogo" src="./assets/harrypotter_logo.png" alt="">
-            <img src="./assets/icons/facebook white.svg" alt="">
-            <img src="./assets/icons/insta white.svg" alt="">
-            <img src="./assets/icons/twitter white.svg" alt="">
-        </div>
-        <div id="about">
-            <span><a href="./about.html">About</a></span>
-            <span><a href="./contact.html">Contact</a></span>
-        </div>
-        <div class="newsletter-signup">
-            <h3>Sign up for updates on all our latest articles</h3>
-            <form action="" method="">
-                <input type="email" name="email" placeholder="Email">
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="copyrights">
-            <p>**All rights reserved to German Weinblatt and Raz Atir**</p>
-        </div>
-
-    </footer>
+    <footer-js></footer-js>
+</body>
 
 </html>

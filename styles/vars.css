@@ -8,6 +8,11 @@
     src: url(../assets/fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
     ;
 }
+@font-face {
+    font-family: logo;
+    src: url(../assets/fonts/HARRYP__.TTF);
+    ;
+}
 :root {
     /*colors*/
     --main-bg: rgba(16, 51, 83);
@@ -19,4 +24,5 @@
     /* fonts */
     --primary: Open Sans;
     --italic: Open Sans Italic;
+    --logo: logo;
 }

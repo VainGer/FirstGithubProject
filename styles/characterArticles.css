@@ -95,4 +95,11 @@ blockquote {
     img{
         width: 100%;
     }
+    #article{
+        grid-template-columns: 1fr 1fr;
+    }
+    #article p{
+        padding-inline: 64px;
+        text-align: left;
+    }
 }

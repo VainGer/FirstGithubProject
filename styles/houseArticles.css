@@ -95,5 +95,10 @@ blockquote {
         width: 360px;
         margin-left: 10vw;
     }
-
+    #article div{
+        grid-template-columns: 1fr 1fr;
+    }
+    #article p{
+        padding-inline: 64px;
+    }
 }

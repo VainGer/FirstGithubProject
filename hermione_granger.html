@@ -7,155 +7,12 @@
     <title>Hermione Granger</title>
     <link rel="stylesheet" href="./styles/characterArticles.css">
     <script src="./js/script.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
 </head>
 
 <body>
-    <div id="mobile-header-bg"></div>
-    <header class="grid">
-        <button onclick="openAndCloseItemInNav('nav')" id="burgerbtn"></button>
-        <nav class="overlay" id="nav">
-            <a href="javascript:void(0)" class="closebtn" onclick="openAndCloseItemInNav('nav')">&times;</a>
-            <ul class="overlay-content" id="ul-nav">
-                <li class="ul-item" id="search-li">
-                    <input type="text" id="search" placeholder="Search" onkeyup="search()">
-                    <a href="javascript:void(0)" class="mobile-item" id="closeSearch"
-                        onclick="cloesSearch()">&times;</a>
-                    <div class="overlay-content">
-                        <ul id="search-list" class="dropdown">
-                            <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher Stone
-                                    movie</a>
-                            </li>
-                            <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of secrets
-                                    movie</a>
-                            </li>
-                            <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban
-                                    movie</a></li>
-                            <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet Of Fire movie</a></li>
-                            <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the Phoenix
-                                    movie</a></li>
-                            <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half Blood Prince
-                                    movie</a>
-                            </li>
-                            <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows Part 1
-                                    movie</a></li>
-                            <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows Part 2
-                                    movie</a></li>
-                            <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher Stone
-                                    book</a>
-                            </li>
-                            <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of secrets
-                                    book</a>
-                            </li>
-                            <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban
-                                    book</a></li>
-                            <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet Of Fire movie</a></li>
-                            <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix
-                                    book</a></li>
-                            <li><a href="./half-blood_prince_book.html">Harry Potter and the Half Blood Prince
-                                    book</a>
-                            </li>
-                            <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows Part 1
-                                    book</a></li>
-                            <li><a href="./harry_potter.html">Harry Potter</a></li>
-                            <li><a href="./hermione_granger.html">Hermione Granger</a></li>
-                            <li><a href="./ron_weasley.html">Ron Weasley</a></li>
-                            <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
-                            <li><a href="./luna_lovegood.html">Luna Lovegood</a></li>
-                            <li><a href="./severus_snape.html">Severus Snape</a></li>
-                            <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
-                            <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
-                            <li><a href="./gryffindor.html">Gryffindor</a></li>
-                            <li><a href="./hufflepuff.html">Hufflepuff</a></li>
-                            <li><a href="./slytherin.html">Slytherin</a></li>
-                            <li><a href="./ravenclaw.html">Ravenclaw</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('movies-menu')">Movies</button></li>
-                <li class="secondary-overlay" id="movies-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('movies-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-movie')" id="moviebtn">
-                        Movies</button>
-                    <ul class="overlay-content dropdown" id="desktop-movie">
-                        <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a>
-                        </li>
-                        <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of Secrets</a>
-                        </li>
-                        <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban</a>
-                        </li>
-                        <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet of Fire</a></li>
-                        <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the
-                                Phoenix</a></li>
-                        <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half-Blood Prince</a></li>
-                        <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows: Part
-                                1</a></li>
-                        <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows: Part
-                                2</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('books-menu')">Books</button></li>
-                <li class="secondary-overlay" id="books-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('books-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-books')">Books</button>
-                    <ul class="overlay-content dropdown" id="desktop-books">
-                        <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher's Stone</a>
-                        </li>
-                        <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of Secrets</a>
-                        </li>
-                        <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban</a>
-                        </li>
-                        <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet of Fire</a></li>
-                        <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix</a>
-                        </li>
-                        <li><a href="./half-blood_prince_book.html">Harry Potter and the Half-Blood Prince</a></li>
-                        <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('house-menu')">Houese</button></li>
-                <li class="secondary-overlay" id="house-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('house-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-house')">Houese</button>
-                    <ul class="overlay-content dropdown" id="desktop-house">
-                        <li><a href="./gryffindor.html">Gryffindor</a></li>
-                        <li><a href="./hufflepuff.html">Hufflepuff</a></li>
-                        <li><a href="./ravenclaw.html">Ravenclaw</a></li>
-                        <li><a href="./slytherin.html">Slytherin</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('characters-menu')">Characters</button>
-                </li>
-                <li class="secondary-overlay" id="characters-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('characters-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-characters')">Characters</button>
-                    <ul class="overlay-content dropdown" id="desktop-characters">
-                        <li><a href="./harry_potter.html">Harry Potter</a></li>
-                        <li><a href="./hermione_granger.html">Hermione Granger</a></li>
-                        <li><a href="./ron_weasley.html">Ron Weasley</a></li>
-                        <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
-                        <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
-                        <li><a href="./luna_lovegood.html">Luna Lovegood</a></li>
-                        <li><a href="./severus_snape.html">Severus Snape</a></li>
-                        <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
-                    </ul>
-                </li>
-                <li><button onclick="window.location.href='./gallery.html'">Gallery</button></li>
-            </ul>
-        </nav>
-        <a href="./index.html" id="logo"></a>
-        <div id="login" class="grid">
-            <button onclick="window.location.href='./register.html'">SIGN UP</button>
-            <button onclick="openAndCloseItemInNav('loginForm')" id="loginbtn">LOG IN</button>
-            <form action="./my_page.html" id="loginForm">
-                <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com" required><br>
-                <input type="password" name="password" id="" placeholder="PASSWORD" required><br>
-                <input type="submit" name="" id="" value="LOGIN">
-            </form>
-        </div>
-    </header>
+    <header-js></header-js>
     <h2 class="center">Hermione Granger</h2>
     <div class="container grid">
         <img id="img-mobile" src="./assets/images/characters/Hermione_Granger.webp" alt="Hermione Granger">
@@ -252,49 +109,88 @@
             </tr>
         </table>
     </div>
-
-    <p>
     <blockquote>Harry Potter: "But why's she got to go to the library?"
         Ronald Weasley: "Because that's what Hermione does. When in doubt, go to the library."</blockquote>
-    Minister Hermione Jean Granger (b. 19 September 1979) was an English Muggle-born witch born to Mr and Mrs
-    Granger. At the age of eleven, she learned about her magical nature and was accepted into Hogwarts School of
-    Witchcraft and Wizardry. Hermione began attending Hogwarts in 1991 and was Sorted into Gryffindor House. She
-    possessed a brilliant academic mind and proved to be a gifted student in almost every subject that she studied, to
-    the point where she was nearly made a Ravenclaw by the Sorting Hat.
+    <div id="article" class="grid">
+        <p>
+            Minister Hermione Jean Granger (b. 19 September 1979) was an English Muggle-born witch born to Mr and Mrs
+            Granger. At the age of eleven, she learned about her magical nature and was accepted into Hogwarts School of
+            Witchcraft and Wizardry. Hermione began attending Hogwarts in 1991 and was Sorted into Gryffindor House. She
+            possessed a brilliant academic mind and proved to be a gifted student in almost every subject that she
+            studied,
+            to
+            the point where she was nearly made a Ravenclaw by the Sorting Hat.
+            <br>
+            Hermione first met her future best friends Harry Potter and Ron Weasley aboard the Hogwarts Express, and
+            initially
+            they found her unfriendly and somewhat of an "insufferable know-it-all", an impression reinforced by her
+            constant
+            correct answers and eagerness to please the professors. However, she stepped in to take the blame from the
+            boys
+            after they had saved her from a troll on Hallowe'en in 1991, surprising them in a grateful way, which led to
+            them
+            quickly becoming friends. She later played a crucial role in protecting the Philosopher's Stone from
+            Voldemort.
+            <br>
+            In her second year, Hermione had a key role in the discovery of the Chamber of Secrets, before falling
+            victim to
+            the
+            Basilisk unleashed upon Hogwarts following the opening of the Chamber. However, she recovered from the
+            petrification
+            under the care of Madam Pomfrey with Professor Sprout's Mandrake Restorative Draught. The next year,
+            Hermione
+            was
+            granted permission to use a Time-Turner from the Ministry of Magic to facilitate her volition to study far
+            more
+            subjects than were possible without time travel, though she and Harry later used it to rescue Sirius Black
+            from
+            the
+            Dementor's Kiss and Buckbeak the hippogriff from execution.
+        </p>
+        <p>
+            During her fourth year, Hermione became an advocate for the better treatment of house-elves, forming the
+            association
+            S.P.E.W., and helped in Harry's preparation for the Triwizard Tournament. In her fifth year, Hermione was
+            the
+            driving force behind the creation of Dumbledore's Army and fought alongside fellow D.A. members in the
+            Battle of
+            the
+            Department of Mysteries. In her sixth year, Hermione continued her role as Prefect and fought in the Battle
+            of
+            the
+            Astronomy Tower.
+            <br>
+            Hermione played a significant role in many other battles of the Second Wizarding War, as well. In 1997, she
+            fought
+            in the Battle of the Seven Potters, alongside the Order of the Phoenix. Hermione and Ron decided not to
+            return
+            to
+            Hogwarts for their final year of studies, instead choosing to accompany Harry on his quest to find and
+            destroy
+            Lord
+            Voldemort's Horcruxes, a quest in which several of her actions were essential. She destroyed Hufflepuff's
+            Cup, a
+            Horcrux, with Ron using a Basilisk fang found in the Chamber of Secrets. Hermione then fought in the Battle
+            of
+            Hogwarts, helping in the defeat of the Death Eater who tortured her: Bellatrix Lestrange.
+            <br>
+            Following the Second Wizarding War, Hermione went back to Hogwarts to complete her education. She later
+            found
+            employment with the Ministry of Magic, furthering the cause for the better treatment of house-elves.
+            Afterward,
+            she
+            was promoted to the Department of Magical Law Enforcement, where she dedicated herself to eradicating old
+            laws
+            that
+            were biased in favour of pure-bloods. Hermione eventually married Ron Weasley and together they had two
+            children,
+            Rose and Hugo. She became the godmother of Harry and Ginny Potter's eldest son James. By the year 2019,
+            Hermione
+            had
+            become the thirty-sixth Minister for Magic.
+        </p>
+    </div>
 
-    Hermione first met her future best friends Harry Potter and Ron Weasley aboard the Hogwarts Express, and initially
-    they found her unfriendly and somewhat of an "insufferable know-it-all", an impression reinforced by her constant
-    correct answers and eagerness to please the professors. However, she stepped in to take the blame from the boys
-    after they had saved her from a troll on Hallowe'en in 1991, surprising them in a grateful way, which led to them
-    quickly becoming friends. She later played a crucial role in protecting the Philosopher's Stone from Voldemort.
-
-    In her second year, Hermione had a key role in the discovery of the Chamber of Secrets, before falling victim to the
-    Basilisk unleashed upon Hogwarts following the opening of the Chamber. However, she recovered from the petrification
-    under the care of Madam Pomfrey with Professor Sprout's Mandrake Restorative Draught. The next year, Hermione was
-    granted permission to use a Time-Turner from the Ministry of Magic to facilitate her volition to study far more
-    subjects than were possible without time travel, though she and Harry later used it to rescue Sirius Black from the
-    Dementor's Kiss and Buckbeak the hippogriff from execution.
-
-    During her fourth year, Hermione became an advocate for the better treatment of house-elves, forming the association
-    S.P.E.W., and helped in Harry's preparation for the Triwizard Tournament. In her fifth year, Hermione was the
-    driving force behind the creation of Dumbledore's Army and fought alongside fellow D.A. members in the Battle of the
-    Department of Mysteries. In her sixth year, Hermione continued her role as Prefect and fought in the Battle of the
-    Astronomy Tower.
-
-    Hermione played a significant role in many other battles of the Second Wizarding War, as well. In 1997, she fought
-    in the Battle of the Seven Potters, alongside the Order of the Phoenix. Hermione and Ron decided not to return to
-    Hogwarts for their final year of studies, instead choosing to accompany Harry on his quest to find and destroy Lord
-    Voldemort's Horcruxes, a quest in which several of her actions were essential. She destroyed Hufflepuff's Cup, a
-    Horcrux, with Ron using a Basilisk fang found in the Chamber of Secrets. Hermione then fought in the Battle of
-    Hogwarts, helping in the defeat of the Death Eater who tortured her: Bellatrix Lestrange.
-
-    Following the Second Wizarding War, Hermione went back to Hogwarts to complete her education. She later found
-    employment with the Ministry of Magic, furthering the cause for the better treatment of house-elves. Afterward, she
-    was promoted to the Department of Magical Law Enforcement, where she dedicated herself to eradicating old laws that
-    were biased in favour of pure-bloods. Hermione eventually married Ron Weasley and together they had two children,
-    Rose and Hugo. She became the godmother of Harry and Ginny Potter's eldest son James. By the year 2019, Hermione had
-    become the thirty-sixth Minister for Magic.
-    </p>
     <div id="commentsSection">
         <input onkeyup="saveInput('name')" type="text" name="name" id="name" placeholder="Your name"><br>
         <input onkeyup="saveInput('comment')" type="text" name="comment" id="comment"
@@ -309,29 +205,7 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-img grid">
-            <img id="footerLogo" src="./assets/harrypotter_logo.png" alt="">
-            <img src="./assets/icons/facebook white.svg" alt="">
-            <img src="./assets/icons/insta white.svg" alt="">
-            <img src="./assets/icons/twitter white.svg" alt="">
-        </div>
-        <div id="about">
-            <span><a href="./about.html">About</a></span>
-            <span><a href="./contact.html">Contact</a></span>
-        </div>
-        <div class="newsletter-signup">
-            <h3>Sign up for updates on all our latest articles</h3>
-            <form action="" method="">
-                <input type="email" name="email" placeholder="Email">
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="copyrights">
-            <p>**All rights reserved to German Weinblatt and Raz Atir**</p>
-        </div>
-
-    </footer>
+    <footer-js></footer-js>
 </body>
 
 </html>

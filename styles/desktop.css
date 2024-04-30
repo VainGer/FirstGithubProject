@@ -19,8 +19,8 @@
     .desktopbtn {
         display: block;
         text-align: center;
-        padding-top: 4%;
         height: 100%;
+        width: max-content;
     }
 
     button:hover {
@@ -47,6 +47,8 @@
 
     header {
         background-color: var(--headerFooter-bg);
+        grid-template-columns: 1fr 6fr 1fr;
+        font-size: 14px;
     }
 
     #signUpbtn {
@@ -55,33 +57,62 @@
 
     #nav {
         order: 2;
-        padding-left: 2vw;
     }
 
     #ul-nav {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        padding-top: 8px;
         width: 50%;
+        padding-left: 5%;
     }
 
     #login {
         grid-template-columns: 1fr 1fr;
         order: 3;
+        padding-top: 5px;
     }
 
-    @media(min-width: 820px) {
+    #login button {
+        width: max-content;
+        text-align: center;
+    }
+
+    @media(min-width: 846px) {
         #loginbtn {
             display: block;
         }
-    }
 
+        #search-li {
+            position: absolute;
+            right: 17%;
+        }
+        #search-li li{
+            width: 300px;
+        }
+    }
+    @media(min-width: 930px){
+        #ul-nav{
+            padding-left: 0;
+            margin-inline: auto;
+        }
+    }
     #search-li {
         order: 6;
-        padding-top: 17px;
+        padding-top: 15px;
+        margin-left: 35%;
     }
 
     #logo {
         margin-left: 15%;
+    }
+
+    #search-li input {
+        width: 150px;
+    }
+
+    #blank {
+        display: none;
     }
 
     #loginForm {

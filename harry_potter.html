@@ -7,155 +7,14 @@
     <title>Harry Potter</title>
     <link rel="stylesheet" href="./styles/characterArticles.css">
     <script src="./js/script.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
 </head>
 
 <body>
-    <div id="mobile-header-bg"></div>
-    <header class="grid">
-        <button onclick="openAndCloseItemInNav('nav')" id="burgerbtn"></button>
-        <nav class="overlay" id="nav">
-            <a href="javascript:void(0)" class="closebtn" onclick="openAndCloseItemInNav('nav')">&times;</a>
-            <ul class="overlay-content" id="ul-nav">
-                <li class="ul-item" id="search-li">
-                    <input type="text" id="search" placeholder="Search" onkeyup="search()">
-                    <a href="javascript:void(0)" class="mobile-item" id="closeSearch"
-                        onclick="cloesSearch()">&times;</a>
-                    <div class="overlay-content">
-                        <ul id="search-list" class="dropdown">
-                            <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher Stone
-                                    movie</a>
-                            </li>
-                            <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of secrets
-                                    movie</a>
-                            </li>
-                            <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban
-                                    movie</a></li>
-                            <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet Of Fire movie</a></li>
-                            <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the Phoenix
-                                    movie</a></li>
-                            <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half Blood Prince
-                                    movie</a>
-                            </li>
-                            <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows Part 1
-                                    movie</a></li>
-                            <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows Part 2
-                                    movie</a></li>
-                            <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher Stone
-                                    book</a>
-                            </li>
-                            <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of secrets
-                                    book</a>
-                            </li>
-                            <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban
-                                    book</a></li>
-                            <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet Of Fire movie</a></li>
-                            <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix
-                                    book</a></li>
-                            <li><a href="./half-blood_prince_book.html">Harry Potter and the Half Blood Prince
-                                    book</a>
-                            </li>
-                            <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows Part 1
-                                    book</a></li>
-                            <li><a href="./harry_potter.html">Harry Potter</a></li>
-                            <li><a href="./hermione_granger.html">Hermione Granger</a></li>
-                            <li><a href="./ron_weasley.html">Ron Weasley</a></li>
-                            <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
-                            <li><a href="./luna_lovegood.html">Luna Lovegood</a></li>
-                            <li><a href="./severus_snape.html">Severus Snape</a></li>
-                            <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
-                            <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
-                            <li><a href="./gryffindor.html">Gryffindor</a></li>
-                            <li><a href="./hufflepuff.html">Hufflepuff</a></li>
-                            <li><a href="./slytherin.html">Slytherin</a></li>
-                            <li><a href="./ravenclaw.html">Ravenclaw</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('movies-menu')">Movies</button></li>
-                <li class="secondary-overlay" id="movies-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('movies-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-movie')" id="moviebtn">
-                        Movies</button>
-                    <ul class="overlay-content dropdown" id="desktop-movie">
-                        <li><a href="./philosophers_stone_movie.html">Harry Potter and the Philosopher's Stone</a>
-                        </li>
-                        <li><a href="./chamber_of_secrets_movie.html">Harry Potter and the Chamber of Secrets</a>
-                        </li>
-                        <li><a href="./prisoner_of_azkaban_movie.html">Harry Potter and the Prisoner of Azkaban</a>
-                        </li>
-                        <li><a href="./goblet_of_fire_movie.html">Harry Potter and the Goblet of Fire</a></li>
-                        <li><a href="./order_of_the_phoenix_movie.html">Harry Potter and the Order of the
-                                Phoenix</a></li>
-                        <li><a href="./half-blood_prince_movie.html">Harry Potter and the Half-Blood Prince</a></li>
-                        <li><a href="./deathly_hallows_p1_movie.html">Harry Potter and the Deathly Hallows: Part
-                                1</a></li>
-                        <li><a href="./deathly_hallows_p2_movie.html">Harry Potter and the Deathly Hallows: Part
-                                2</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('books-menu')">Books</button></li>
-                <li class="secondary-overlay" id="books-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('books-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-books')">Books</button>
-                    <ul class="overlay-content dropdown" id="desktop-books">
-                        <li><a href="./philosophers_stone_book.html">Harry Potter and the Philosopher's Stone</a>
-                        </li>
-                        <li><a href="./chamber_of_secrets_book.html">Harry Potter and the Chamber of Secrets</a>
-                        </li>
-                        <li><a href="./prisoner_of_azkaban_book.html">Harry Potter and the Prisoner of Azkaban</a>
-                        </li>
-                        <li><a href="./goblet_of_fire_book.html">Harry Potter and the Goblet of Fire</a></li>
-                        <li><a href="./order_of_the_phoenix_book.html">Harry Potter and the Order of the Phoenix</a>
-                        </li>
-                        <li><a href="./half-blood_prince_book.html">Harry Potter and the Half-Blood Prince</a></li>
-                        <li><a href="./deathly_hallows_book.html">Harry Potter and the Deathly Hallows</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('house-menu')">Houese</button></li>
-                <li class="secondary-overlay" id="house-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('house-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-house')">Houese</button>
-                    <ul class="overlay-content dropdown" id="desktop-house">
-                        <li><a href="./gryffindor.html">Gryffindor</a></li>
-                        <li><a href="./hufflepuff.html">Hufflepuff</a></li>
-                        <li><a href="./ravenclaw.html">Ravenclaw</a></li>
-                        <li><a href="./slytherin.html">Slytherin</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-item"><button onclick="openAndCloseItemInNav('characters-menu')">Characters</button>
-                </li>
-                <li class="secondary-overlay" id="characters-menu">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="openAndCloseItemInNav('characters-menu')">&times;</a>
-                    <button class="desktopbtn" onclick="openAndCloseItemInNav('desktop-characters')">Characters</button>
-                    <ul class="overlay-content dropdown" id="desktop-characters">
-                        <li><a href="./harry_potter.html">Harry Potter</a></li>
-                        <li><a href="./hermione_granger.html">Hermione Granger</a></li>
-                        <li><a href="./ron_weasley.html">Ron Weasley</a></li>
-                        <li><a href="./ginny_weasley.html">Ginny Weasley</a></li>
-                        <li><a href="./neville_longbottom.html">Neville Longbottom</a></li>
-                        <li><a href="./luna_lovegood.html">Luna Lovegood</a></li>
-                        <li><a href="./severus_snape.html">Severus Snape</a></li>
-                        <li><a href="./lord_voldemort.html">Lord Voldemort</a></li>
-                    </ul>
-                </li>
-                <li><button onclick="window.location.href='./gallery.html'">Gallery</button></li>
-            </ul>
-        </nav>
-        <a href="./index.html" id="logo"></a>
-        <div id="login" class="grid">
-            <button onclick="window.location.href='./register.html'">SIGN UP</button>
-            <button onclick="openAndCloseItemInNav('loginForm')" id="loginbtn">LOG IN</button>
-            <form action="./my_page.html" id="loginForm">
-                <input type="email" name="email" id="" placeholder="YOUR-EMAIL@email.com" required><br>
-                <input type="password" name="password" id="" placeholder="PASSWORD" required><br>
-                <input type="submit" name="" id="" value="LOGIN">
-            </form>
-        </div>
-    </header>
+    <header-js></header-js>
+    <div id="copyOfHeader">
+    </div>
     <h2 class="center">Harry Potter</h2>
     <div class="container grid">
         <img id="img-mobile" src="./assets/images/characters/Harry_Potter.webp" alt="Harry Potter">
@@ -249,85 +108,133 @@
             </tr>
             <tr class="section-header">
                 <td colspan="2">House</td>
-               <tr><td colspan="2">Gryffindor</td></tr> 
+            <tr>
+                <td colspan="2">Gryffindor</td>
+            </tr>
             </tr>
         </table>
     </div>
-
-    <p>
     <blockquote>"You are protected, in short, by your ability to love! The only protection that can possibly work
         against the lure of power like Voldemort's! In spite of all the temptation you have endured, all the suffering,
         you remain pure of heart, just as pure as you were at the age of eleven, when you stared into a mirror that
         reflected your heart's desire, and it showed you only the way to thwart Lord Voldemort, and not immortality or
         riches. Harry, have you any idea how few wizards could have seen what you saw in that mirror?"
         — Albus Dumbledore describing Harry's rare nature</blockquote>
-    Harry James Potter (b. 31 July 1980) was an English half-blood wizard, and one of the most famous wizards
-    of modern times. The only child and son of James and Lily Potter (née Evans), Harry's birth was overshadowed by a
-    prophecy, naming either himself or Neville Longbottom as the one with the power to vanquish Lord Voldemort, one of
-    the most powerful and feared Dark wizards in the world. After half of the prophecy was reported to Voldemort,
-    courtesy of Severus Snape, Harry was chosen as the target due to his many similarities with the Dark Lord. This in
-    turn caused the Potter family to go into hiding.
+    <div id="article" class="grid">
+        <p>
+            Harry James Potter (b. 31 July 1980) was an English half-blood wizard, and one of the most famous wizards
+            of modern times. The only child and son of James and Lily Potter (née Evans), Harry's birth was overshadowed
+            by a
+            prophecy, naming either himself or Neville Longbottom as the one with the power to vanquish Lord Voldemort,
+            one of
+            the most powerful and feared Dark wizards in the world. After half of the prophecy was reported to
+            Voldemort,
+            courtesy of Severus Snape, Harry was chosen as the target due to his many similarities with the Dark Lord.
+            This in
+            turn caused the Potter family to go into hiding.
+            <br>
+            Voldemort made his first attempt to circumvent the prophecy when Harry was a year and three months old.
+            During this
+            attempt, he murdered Harry's parents as they tried to protect him, but this unsuccessful attempt to kill
+            Harry led
+            to Voldemort's first downfall. This downfall marked the end of the First Wizarding War, and to Harry
+            henceforth
+            being known as "The Boy Who Lived", as he was the only known survivor of the Killing Curse due to being
+            magically
+            protected by his mother's loving sacrifice. In accordance with the terms of the prophecy, this attempt on
+            his life
+            also established him, not Neville, as Voldemort's nemesis.
+            <br>
+            One consequence of Lily's sacrifice was that her orphaned son had to be raised by her only remaining blood
+            relative,
+            his Muggle aunt Petunia Dursley, and her husband, uncle Vernon Dursley. While in their care, he would be
+            protected
+            from Lord Voldemort due to the Bond of Blood charm that Albus Dumbledore placed upon him. This powerful
+            charm
+            would protect him until he either came of age, or no longer called his aunt's house home. Due to Petunia's
+            resentment of her sister and her magical abilities, Harry grew up abused and neglected.
+            <br>
+            Shortly before Harry's eleventh birthday, there were several attempts from Hogwarts School of Witchcraft and
+            Wizardry to send him a letter inviting him to not only come to Hogwarts, but also to explain his magical
+            heritage.
+            Though Vernon Dursley ultimately made the decision to leave their residence at 4 Privet Drive temporarily to
+            evade
+            the letters, his attempts were ultimately for naught. On his eleventh birthday, Harry learned from Rubeus
+            Hagrid
+            that he was a wizard. Rubeus Hagrid took Harry from the Dursley family the next day to Diagon Alley. This is
+            where Harry withdrew some of his money from Gringotts Wizarding Bank, where Hagrid bought Harry's snow-white
+            owl,
+            Hedwig. While he was in Diagon Alley, Harry also got his school supplies (i.e., books from Flourish and
+            Blotts, his
+            robes from Madam Malkin's Robes for All Occasions, and his potion equipment from Slug & Jiggers Apothecary).
+            Harry began attending Hogwarts in 1991. The Sorting Hat told Harry that he would do well in Slytherin House,
+            but
+            Harry pleaded "not Slytherin". The Hat heeded this plea and sorted the young wizard into Gryffindor House.
+            At
+            school, Harry became best friends with Ron Weasley and Hermione Granger.
+        </p>
+        <p>
+            He was also the youngest Seeker in a
+            century, making the house team in his first year when Minerva McGonagall introduced him to Oliver Wood,
+            Gryffindor's
+            Quidditch captain at the time. He later became the captain of the Gryffindor Quidditch Team in his sixth
+            year,
+            winning two Quidditch Cups. While in school, Harry also demonstrated an extraordinary talent for Defence
+            Against
+            the Dark Arts.
+            He became even better-known in his early years for protecting the Philosopher's Stone from Voldemort, saving
+            Ron's
+            sister Ginny Weasley, solving the mystery of the Chamber of Secrets, slaying Salazar Slytherin's basilisk,
+            and
+            learning how to conjure a corporeal Patronus at the age of thirteen, which took the form of a stag. In his
+            fourth
+            year, Harry won the Triwizard Tournament, although the person had to be seventeen to enter, and Harry was
+            only
+            fourteen. The competition ended with the tragic death of Cedric Diggory and the return of Lord Voldemort.
+            During the
+            next school year, in defiance of Dolores Umbridge's and the Ministry of Magic's strict regime against the
+            teaching
+            of Defence Against the Dark Arts and the continued introduction of the new Educational Decree, Ronald
+            Weasley and
+            Hermione Granger first had the idea of creating an illegal Defence Against the Dark Arts group called
+            Dumbledore's
+            Army. Harry was initially reluctant to the idea, but he gradually came to like it and eventually agreed to
+            start the
+            group. He also fought in the Battle of the Department of Mysteries, during which he lost his godfather,
+            Sirius
+            Black, and the prophecy was destroyed.
+            <br>
+            Harry played a significant role in many other battles of the Second Wizarding War. During what would have
+            been his
+            seventh year, he, Ron, and Hermione hunted down and destroyed Voldemort's Horcruxes. During the Battle of
+            Hogwarts,
+            Harry personally saw the deaths of Severus Snape and Fred Weasley while learning that Remus Lupin,
+            Nymphadora Tonks,
+            Colin Creevey, and many others had fallen in the battle as well. He encountered Voldemort and nearly
+            sacrificed
+            himself, knowing that his doing so was the only way to destroy the fragment of Voldemort's soul inside of
+            him. While
+            in limbo, after Voldemort cursed him in the forest clearing, Dumbledore gave Harry advice and background
+            information
+            on the Dark Lord. When told that he could choose to live or to "move on," Harry ultimately chose to live.
+            After he
+            awoke, Harry confronted Voldemort and defeated him once and for all.
+            <br>
+            Harry was also noted for being the only known Master of Death, having united the three Deathly Hallows at
+            the mere
+            age of seventeen.
+            <br>
+            After the war, Harry became an Auror and helped reform and revolutionise the Ministry of Magic. At some
+            point,
+            he married Ginny, with whom he had three children: James Sirius, Albus Severus, and Lily Luna. He was also
+            named the
+            godfather of Edward "Teddy" Remus Lupin. In 2007, Harry was promoted to Head of the British Auror Office at
+            the age
+            of 26, and would occasionally deliver Defence Against the Dark Arts lectures at Hogwarts. He was later
+            promoted to Head of the Department of Magical Law Enforcement by the summer of 2020.
+        </p>
+    </div>
 
-    Voldemort made his first attempt to circumvent the prophecy when Harry was a year and three months old. During this
-    attempt, he murdered Harry's parents as they tried to protect him, but this unsuccessful attempt to kill Harry led
-    to Voldemort's first downfall. This downfall marked the end of the First Wizarding War, and to Harry henceforth
-    being known as "The Boy Who Lived", as he was the only known survivor of the Killing Curse due to being magically
-    protected by his mother's loving sacrifice. In accordance with the terms of the prophecy, this attempt on his life
-    also established him, not Neville, as Voldemort's nemesis.
-
-    One consequence of Lily's sacrifice was that her orphaned son had to be raised by her only remaining blood relative,
-    his Muggle aunt Petunia Dursley, and her husband, uncle Vernon Dursley. While in their care, he would be protected
-    from Lord Voldemort due to the Bond of Blood charm that Albus Dumbledore placed upon him. This powerful charm
-    would protect him until he either came of age, or no longer called his aunt's house home. Due to Petunia's
-    resentment of her sister and her magical abilities, Harry grew up abused and neglected.
-
-    Shortly before Harry's eleventh birthday, there were several attempts from Hogwarts School of Witchcraft and
-    Wizardry to send him a letter inviting him to not only come to Hogwarts, but also to explain his magical heritage.
-    Though Vernon Dursley ultimately made the decision to leave their residence at 4 Privet Drive temporarily to evade
-    the letters, his attempts were ultimately for naught. On his eleventh birthday, Harry learned from Rubeus Hagrid
-    that he was a wizard. Rubeus Hagrid took Harry from the Dursley family the next day to Diagon Alley. This is
-    where Harry withdrew some of his money from Gringotts Wizarding Bank, where Hagrid bought Harry's snow-white owl,
-    Hedwig. While he was in Diagon Alley, Harry also got his school supplies (i.e., books from Flourish and Blotts, his
-    robes from Madam Malkin's Robes for All Occasions, and his potion equipment from Slug & Jiggers Apothecary).
-
-    Harry began attending Hogwarts in 1991. The Sorting Hat told Harry that he would do well in Slytherin House, but
-    Harry pleaded "not Slytherin". The Hat heeded this plea and sorted the young wizard into Gryffindor House. At
-    school, Harry became best friends with Ron Weasley and Hermione Granger. He was also the youngest Seeker in a
-    century, making the house team in his first year when Minerva McGonagall introduced him to Oliver Wood, Gryffindor's
-    Quidditch captain at the time. He later became the captain of the Gryffindor Quidditch Team in his sixth year,
-    winning two Quidditch Cups. While in school, Harry also demonstrated an extraordinary talent for Defence Against
-    the Dark Arts.
-
-    He became even better-known in his early years for protecting the Philosopher's Stone from Voldemort, saving Ron's
-    sister Ginny Weasley, solving the mystery of the Chamber of Secrets, slaying Salazar Slytherin's basilisk, and
-    learning how to conjure a corporeal Patronus at the age of thirteen, which took the form of a stag. In his fourth
-    year, Harry won the Triwizard Tournament, although the person had to be seventeen to enter, and Harry was only
-    fourteen. The competition ended with the tragic death of Cedric Diggory and the return of Lord Voldemort. During the
-    next school year, in defiance of Dolores Umbridge's and the Ministry of Magic's strict regime against the teaching
-    of Defence Against the Dark Arts and the continued introduction of the new Educational Decree, Ronald Weasley and
-    Hermione Granger first had the idea of creating an illegal Defence Against the Dark Arts group called Dumbledore's
-    Army. Harry was initially reluctant to the idea, but he gradually came to like it and eventually agreed to start the
-    group. He also fought in the Battle of the Department of Mysteries, during which he lost his godfather, Sirius
-    Black, and the prophecy was destroyed.
-
-    Harry played a significant role in many other battles of the Second Wizarding War. During what would have been his
-    seventh year, he, Ron, and Hermione hunted down and destroyed Voldemort's Horcruxes. During the Battle of Hogwarts,
-    Harry personally saw the deaths of Severus Snape and Fred Weasley while learning that Remus Lupin, Nymphadora Tonks,
-    Colin Creevey, and many others had fallen in the battle as well. He encountered Voldemort and nearly sacrificed
-    himself, knowing that his doing so was the only way to destroy the fragment of Voldemort's soul inside of him. While
-    in limbo, after Voldemort cursed him in the forest clearing, Dumbledore gave Harry advice and background information
-    on the Dark Lord. When told that he could choose to live or to "move on," Harry ultimately chose to live. After he
-    awoke, Harry confronted Voldemort and defeated him once and for all.
-
-    Harry was also noted for being the only known Master of Death, having united the three Deathly Hallows at the mere
-    age of seventeen.
-
-    After the war, Harry became an Auror and helped reform and revolutionise the Ministry of Magic. At some point,
-    he married Ginny, with whom he had three children: James Sirius, Albus Severus, and Lily Luna. He was also named the
-    godfather of Edward "Teddy" Remus Lupin. In 2007, Harry was promoted to Head of the British Auror Office at the age
-    of 26, and would occasionally deliver Defence Against the Dark Arts lectures at Hogwarts. He was later
-    promoted to Head of the Department of Magical Law Enforcement by the summer of 2020.
-    </p>
     <div id="commentsSection">
         <input onkeyup="saveInput('name')" type="text" name="name" id="name" placeholder="Your name"><br>
         <input onkeyup="saveInput('comment')" type="text" name="comment" id="comment"
@@ -342,29 +249,7 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-img grid">
-            <img id="footerLogo" src="./assets/harrypotter_logo.png" alt="">
-            <img src="./assets/icons/facebook white.svg" alt="">
-            <img src="./assets/icons/insta white.svg" alt="">
-            <img src="./assets/icons/twitter white.svg" alt="">
-        </div>
-        <div id="about">
-            <span><a href="./about.html">About</a></span>
-            <span><a href="./contact.html">Contact</a></span>
-        </div>
-        <div class="newsletter-signup">
-            <h3>Sign up for updates on all our latest articles</h3>
-            <form action="" method="">
-                <input type="email" name="email" placeholder="Email">
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="copyrights">
-            <p>**All rights reserved to German Weinblatt and Raz Atir**</p>
-        </div>
-
-    </footer>
+    <footer-js></footer-js>
 </body>
 
 </html>

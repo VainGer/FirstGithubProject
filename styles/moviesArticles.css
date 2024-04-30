@@ -4,6 +4,9 @@
 @import url(./tablet.css);
 @import url(./vars.css);
 
+h2{
+    padding-top: 32px;
+}
 .container {
     text-align: center;
     padding-inline: 8px;
@@ -27,7 +30,7 @@ td {
     padding: 10px;
 }
 
-img {
+ div img {
     padding-top: 5vh;
     display: block;
     margin: 20px auto;
@@ -60,6 +63,13 @@ blockquote {
     }
     img{
         width: 504px;
+    }
+    #article{
+        grid-template-columns: 1fr 1fr;
+    }
+    #article p{
+        padding-inline: 64px;
+        text-align: left;
     }
 }
 

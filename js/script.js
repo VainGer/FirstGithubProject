@@ -52,15 +52,6 @@ window.onclick = function (event) {
     }
   }
 }
-//for home page menu
-function openAccordion(id) {
-  if (document.getElementById(id).style.display === "grid") {
-    document.getElementById(id).style.display = "none";
-  }
-  else {
-    document.getElementById(id).style.display = "grid";
-  }
-}
 //Search
 function search() {
   document.getElementById("search-list").style.display = "block";
