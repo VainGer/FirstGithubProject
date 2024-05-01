@@ -20,7 +20,6 @@ th,
 td {
     border: 1px solid black;
     border-collapse: collapse;
-    margin: auto;
     text-align: center;
 }
 
@@ -28,10 +27,8 @@ th,
 td {
     padding: 10px;
 }
-
-img {
-    max-width: 100%;
-    padding-left: 24vw;
+.container table, .container img{
+    margin-inline: auto;
 }
 .section-header {
     background-color: #0e2f4e;
@@ -82,7 +79,7 @@ blockquote {
 
 @media(min-width: 767px) {
     .container {
-        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     #article {
